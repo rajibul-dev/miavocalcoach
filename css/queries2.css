@@ -1,0 +1,270 @@
+/* /////////////////////
+SCALE SHIFT
+///////////////////// */
+
+@media (max-width: 68em) {
+  html {
+    font-size: 56.25%;
+  }
+}
+
+@media (max-width: 64em) {
+  html {
+    font-size: 50%;
+  }
+}
+
+/* /////////////////////
+THE POINT SECTION
+///////////////////// */
+
+/* Handle that image */
+@media (max-width: 57.375em) {
+  .yourserver-img {
+    width: 30%;
+  }
+}
+@media (max-width: 49.25em) {
+  .yourserver-img {
+    width: 35%;
+  }
+  .flexbox {
+    justify-content: flex-start;
+    gap: 4.8rem;
+  }
+}
+
+/* ONE COLUMN SHIFT */
+@media (max-width: 45.82em) {
+  .flexbox {
+    flex-direction: column;
+    align-items: center;
+  }
+  .yourserver-img {
+    align-self: center;
+  }
+  .text-box {
+    width: 80%;
+  }
+  .more-margin {
+    margin-bottom: 6.4rem;
+  }
+}
+@media (max-width: 36.25em) {
+  .yourserver-img {
+    width: 50%;
+  }
+}
+@media (max-width: 34.375em) {
+  .text-box {
+    width: 94%;
+  }
+  .main-heading {
+    letter-spacing: 2pt;
+    margin-bottom: 6.4rem;
+  }
+}
+@media (max-width: 31em) {
+  .main-heading {
+    word-spacing: 0.6rem;
+  }
+}
+@media (max-width: 30em) {
+  .main-heading {
+    word-spacing: 0.3rem;
+    letter-spacing: 1pt;
+  }
+  .more-margin {
+    text-align: start;
+    padding-left: 2%;
+  }
+}
+@media (max-width: 28.75em) {
+  .main-heading {
+    font-size: 2.8rem;
+  }
+}
+@media (max-width: 27.25em) {
+  .yourserver-img {
+    width: 70%;
+  }
+  .pricing-section {
+    padding-top: 9.6rem;
+  }
+}
+
+@media (max-width: 23.25em) {
+  h1.main-heading {
+    font-size: 2.4rem;
+    line-height: 1.3;
+  }
+}
+@media (max-width: 23em) {
+  .pricing-heading {
+    line-height: 1.3;
+  }
+}
+
+/* /////////////////////
+PLANS SECTION
+///////////////////// */
+
+@media (max-width: 51.125em) {
+  .plan-box.free:hover {
+    box-shadow: 0 3px 14px rgba(0, 0, 0, 0.2);
+  }
+
+  .plan-box.paid:hover {
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+  }
+  .plan-box.free:hover,
+  .plan-box.paid:hover {
+    /* transform: translateY(-2%); */
+    transform: scale(1);
+  }
+  .card-flex {
+    flex-direction: column;
+    align-items: center;
+    gap: 8rem;
+  }
+  .plan-box {
+    width: 80%;
+  }
+  .plans-section {
+    padding-top: 4rem;
+    /* padding-bottom: 10rem; */
+  }
+  .pricing-section {
+    padding-bottom: 4rem;
+  }
+  .free-btn.plan-btn,
+  .paid-btn.plan-btn {
+    margin-top: 3.2rem;
+  }
+  .plan-box {
+    padding-bottom: 6.4rem;
+  }
+  #pricing {
+    padding-bottom: 6.4rem;
+  }
+}
+
+@media (max-width: 34em) {
+  .plan-box {
+    width: 97%;
+  }
+  /* .pricing-box {
+    padding-top: 8rem;
+  } */
+}
+@media (max-width: 23.75em) {
+  .plan-box {
+    width: 100%;
+  }
+  .plan-box.free,
+  .plan-box.paid {
+    padding-left: 3.2rem;
+    padding-right: 3.2rem;
+  }
+}
+
+/* /////////////////////
+PRICING SECTION
+///////////////////// */
+
+@media (max-width: 39.25em) {
+  .pricing-box {
+    width: 100%;
+  }
+  .plan-text h3 {
+    line-height: 1.4;
+    margin-bottom: 0.4rem;
+  }
+  .plan-text {
+    width: 70%;
+  }
+  .price {
+    font-size: 4.4rem;
+  }
+  .euro {
+    font-size: 2.8rem;
+  }
+  .pricing-heading,
+  .plan-flex {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+  .pricing-section .main-btn {
+    margin-left: 3rem;
+    margin-right: 3rem;
+  }
+}
+
+@media (max-width: 31.375em) {
+  .plan-text p {
+    font-size: 1.65rem;
+    line-height: 1.6;
+  }
+  .plan-text {
+    width: 78%;
+  }
+  .plan-text h3 {
+    font-size: 2.2rem;
+  }
+}
+
+@media (max-width: 27.125em) {
+  a.main-btn:link {
+    font-size: 1.915rem;
+  }
+}
+@media (max-width: 26.5em) {
+  .plan-text {
+    width: 75%;
+  }
+}
+@media (max-width: 26.5em) {
+  a.main-btn:link {
+    line-height: 1.2;
+  }
+}
+@media (max-width: 21.56em) {
+  .pricing-section .main-btn {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+}
+@media (max-width: 20.25em) {
+  .pricing-box .main-btn {
+    line-height: 1.1;
+  }
+}
+
+/* /////////////////////
+FIXING SPACES FOR SMALLER SCREEN DEVICES
+///////////////////// */
+
+@media (max-width: 33.8em) {
+  .main-section {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+  }
+}
+
+/* Fixes for Montserrat font */
+
+@media (max-width: 26.5625em) {
+  .main-section .main-subheading {
+    font-size: 3rem;
+  }
+  h1.main-heading {
+    letter-spacing: normal;
+  }
+  .pricing-heading {
+    font-size: 3.4rem;
+  }
+  a.main-btn:link {
+    text-transform: none;
+    padding: 1.6rem;
+  }
+}
