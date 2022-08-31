@@ -28,6 +28,7 @@
       crossorigin="anonymous"
     ></script>
 
+    <script src="../js/lessons.js" defer></script>
     <link href="/css/style2.css" rel="stylesheet" />
     <link href="/css/queries2.css" rel="stylesheet" />
     <link rel="icon" href="/img/favicon.png" type="image/icon type" />
@@ -216,7 +217,45 @@
         </div>
       </section>
 
+      <section class="calendly-section">
+        <div class="calendly-container">
+          <h2 class="main-subheading calendly-heading">Schedule a Lesson</h2>
+          <!-- Calendly inline widget begin -->
+          <div class="calendly-inline-widget" data-url="https://calendly.com/miavocalcoach?hide_landing_page_details=1&primary_color=fc9cea"></div>
+          <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+          <!-- Calendly inline widget end -->
+        </div>
+      </section>
 
+      <section class="contacts-section">
+        <div class="contacts-container">
+          <div class="contact-box">
+            <h2>Have a Question?</h2>
+            <form action="">
+              <div class="form-flex">
+                <div class="form-pair">                
+                  <label for="name">Name</label>
+                <input  placeholder="John Titor" id="name" name="name" type="text"/>
+              </div>
+              <div class="form-pair">              
+                <label for="email">Email Address</label>
+                <input  placeholder="example@gmail.com" id="email" name="email" type="email"/>
+              </div>
+              <div class="form-pair">     
+                <label for="subject">Subject</label>
+                <input  placeholder="Subject of the message (optional)" id="subject" name="subject" type="text"/>
+              </div>
+              
+              <div class="form-pair">
+                <label for="message">Message</label>
+                <textarea placeholder="Type your message here..." id="message" name="message"></textarea>
+              </div>
+            </div>
+              <button>Submit</button>
+            </form>
+          </div>
+        </div>
+      </section>
 
       <section class="bth">
         <div class="bth-container">

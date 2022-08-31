@@ -268,3 +268,69 @@ FIXING SPACES FOR SMALLER SCREEN DEVICES
     padding: 1.6rem;
   }
 }
+
+/* /////////////////////
+CALENDLY SECTION
+///////////////////// */
+
+@media (max-width: 68em) {
+  .calendly-inline-widget {
+    transform: scale(1.2);
+    height: 55rem;
+    box-shadow: none;
+  }
+  .calendly-heading {
+    margin-bottom: 0;
+  }
+  .contacts-section {
+    padding-top: 3.2rem;
+  }
+}
+@media (max-width: 64em) {
+  .calendly-inline-widget {
+    transform: scale(1.1);
+    height: 62rem;
+    width: 50rem;
+  }
+  .calendly-heading {
+    transform: translateY(-200%);
+  }
+}
+@media (max-width: 32.75em) {
+  .calendly-inline-widget {
+    transform: scale(1);
+    height: 69.3rem;
+    width: 96%;
+  }
+  .calendly-heading {
+    transform: translateY(-120%);
+    text-align: start;
+    padding-left: 2%;
+  }
+  .calendly-section {
+    padding: 6.4rem 0;
+    padding-bottom: 1.8rem;
+  }
+  .plans-section {
+    padding-bottom: 10rem;
+  }
+  .contacts-section {
+    padding-top: 0;
+  }
+}
+@media (max-width: 27em) {
+  .calendly-section {
+    padding-bottom: 4.8rem;
+  }
+  .contacts-section {
+    padding-top: 4.8rem;
+  }
+  .contact-box {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  html .contact-box textarea {
+    height: 100px;
+  }
+}
