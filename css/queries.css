@@ -213,7 +213,7 @@ Making it a grid and removing the hover effect */
   }
   .socials-section {
     padding-top: 6.4rem;
-    padding-bottom: 7rem;
+    padding-bottom: 8rem;
   }
   /* .button:nth-child(1) {
     grid-row: 1;
@@ -385,5 +385,49 @@ TESTIMONIALS SECTION
   .message-box {
     padding-left: 8%;
     padding-right: 8%;
+  }
+}
+
+/* /////////////////////
+PATREON SECTION
+///////////////////// */
+
+@media (max-width: 42.5em) {
+  .patreon-heading {
+    font-size: 2.4rem;
+    margin-bottom: 1.1rem;
+  }
+  .patreon-wrapper {
+    width: 41rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0;
+    padding: 4rem 3rem;
+  }
+  .patreon-button {
+    margin: 0;
+    padding: 1.2rem 4.4rem;
+  }
+  .img-patreon {
+    margin-bottom: 2.4rem;
+    width: 14rem;
+  }
+  .patreon-text {
+    margin-bottom: 3.2rem;
+  }
+  .socials-section {
+    padding-bottom: 6.4rem;
+  }
+  .patreon-section {
+    padding-bottom: 8;
+  }
+}
+@media (max-width: 25em) {
+  .patreon-wrapper {
+    width: 97%;
+  }
+}
+@media (max-width: 22.82em) {
+  .patreon-heading {
   }
 }

@@ -40,6 +40,10 @@
     <link rel="stylesheet" href="" />
     <link href="css/style.css" rel="stylesheet" />
     <link href="css/queries.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style2.css" />
+    <link rel="stylesheet" href="css/queries2.css" />
+    <script src="js/script.js" defer></script>
+    <script src="js/lessons.js" defer></script>
 
     <!-- This script is here but i don't know javascript yet to implement it -->
     <script
@@ -90,7 +94,7 @@
     <title>MiaVocalCoach</title>
   </head>
   <body>
-    <section class="about-section section-margin">
+    <section class="about-section section-margin1">
       <div class="about-container">
         <div class="img-box">
           <picture>
@@ -205,52 +209,209 @@
       </div>
     </section>
 
-    <section class="cta-section">
-      <div class="cta-container">
-        <div class="cta-box ov-box">
-          <img src="/img/webp/ov.webp" alt="One Voice discord server logo" />
-          <h2 class="cta-heading ov-heading">One Voice</h2>
-          <p class="cta-description ov-description">
-            Weekly free 1-on-1 30-minute voice lessons, weekly karaokes,
-            information on health for singing, and a resource library with a
-            supportive community!
-          </p>
-          <a
-            href="https://discord.gg/8khKvfHG"
-            target="_blank"
-            class="cta-btn ov-btn cta-btn-trans"
-            >To One Voice</a
-          >
-        </div>
-        <div class="cta-box lessons-box">
-          <img
-            src="/img/webp/mia-pfp.webp"
-            alt="MiaVocalCoach: Mia discord profile picture"
-          />
-          <h2 class="cta-heading lessons-heading">My Lessons</h2>
-          <p class="cta-description lessons-description">
-            Choose from my free AND paid options!
-          </p>
-          <a href="lessons/" class="cta-btn lessons-btn">To Lessons</a>
-        </div>
-        <div class="cta-box patreon-box">
-          <img
-            src="/img/webp/mia-patron.webp"
-            alt="MiaVocalCoach Patreon logo"
-          />
-          <h2 class="cta-heading patreon-heading">Support me on Patreon!</h2>
-          <p class="cta-description patreon-description">
-            Get exclusive perks!
-          </p>
-          <a
-            href="https://www.patreon.com/MiaVocalCoach"
-            target="_blank"
-            class="cta-btn patreon-btn cta-btn-trans"
-            >To Patreon</a
-          >
+    <section class="patreon-section">
+      <div class="patreon-container">
+        <div class="patreon-wrapper">
+          <img class="img-patreon" src="img/webp/mia-patron.webp" alt="">
+          <div class="patreon-text">
+            <h2 class="patreon-heading">Support me on Patreon!</h2>
+            <p class="patreon-p">Get exclusive perks!</p>
+          </div>
+          <a target="_blank" href="https://www.patreon.com/MiaVocalCoach" class="patreon-button">To Patreon</a>
         </div>
       </div>
     </section>
+
+    <section class="main-section">
+      <div class="main-container">
+        <h1 class="main-heading">PRIVATE PAID LESSONS</h1>
+        <div class="flexbox">
+          <div class="text-box">
+            <h2 class="main-subheading">The point of our lessons</h2>          
+            <ul class="feature-box">
+              <li>
+                <p class="feature-text">
+                  We will be working together in order to create the voice that <strong>YOU</strong> want in the fastest and healthiest way possible! The tools to do so will be given to you so you can also safely work on your own.
+                </p>
+              </li>
+              <li>
+                <p class="feature-text">
+                  Within the lesson a practice program will be specifically designed for your personal needs. You get "homework" and a small summary of what you need to work on after each lesson. Practicing alone is just as important as practicing and learning with me!
+                </p>
+              </li>
+              <li>
+                <p class="feature-text">
+                  Your progress will be tracked through the <strong>Your One Voice</strong> Discord server. You get your own personal category with channels designed to your needs! Every lesson is recorded and you get private access to those videos. This will allow us to track your progress overtime. (If you would rather not use Discord, we can use other options)
+                </p>
+              </li>
+            </ul>           
+          </div>
+          <img
+            src="/img/youronevoice.png"
+            alt="Your One Voice server for Mia's paid lessons"
+            class="yourserver-img"
+          />
+        </div>     
+      </div>
+    </section>
+
+    <section id="pricing" class="pricing-section">
+      <div class="pricing-container">
+        <div class="pricing-box">
+          <h2 class="pricing-heading plan-heading">Paid Lesson Options</h2>
+          <div class="plans">
+            <div class="plan-flex">
+              <div class="plan-text">
+                <h3>Singular 30 minute Lesson</h3>
+                <p>A short session to get you going in the right direction!</p>
+              </div>
+              <span class="price"><span class="euro">€</span>40</span>
+            </div>
+            <div class="plan-flex">
+              <div class="plan-text">
+                <h3>Singular One hour Lesson</h3>
+                <p>Enough time for us to give plenty of attention to technique, supervised practice and/or song work! (Recommended)</p>
+              </div>
+              <span class="price"><span class="euro">€</span>80</span>
+            </div>
+            <div class="plan-flex">
+              <div class="plan-text">
+                <h3>30 minute Package of 4</h3>
+                <p>
+                  4 Lessons for the price of 3!<br>
+                  <s>€160</s> <strong>€120</strong> (€30 on average per lesson)
+                </p>
+              </div>
+              <span class="price"><span class="euro">€</span>120</span>
+            </div>
+            <div class="plan-flex">
+              <div class="plan-text">
+                <h3>1 hour Package of 4</h3>
+                <p>
+                  4 Lessons for the price of 3!<br>
+                  <s>€320</s> <strong>€240</strong> (€60 on average per lesson)
+                </p>
+              </div>
+              <span class="price"><span class="euro">€</span>240</span>
+            </div>
+          </div>
+          <a href="https://docs.google.com/forms/d/1dW-N6xyf7ATc6zCIL0rR1I63EN4A4U6JghhPA6xi2pM/viewform?edit_requested=true" class="main-btn">Apply for Private Paid Lessons</a>
+        </div>
+      </div>
+    </section>
+    
+    <section class="plans-section">
+      <div class="plans-container">        
+        <h2 class="main-subheading more-margin">My current options for lessons</h2>
+        <div class="card-flex">
+          <div class="plan-box free">
+            <h3 class="plan-heading">Free Lessons</h3>
+            <ul class="plan-feature-list">
+              <li class="plan-feature-item">
+                <i class="fa-solid fa-circle free-icon"></i>
+                <p class="plan-feature-p">
+                  One 30-minute lesson per week
+                </p>
+              </li>
+              <li class="plan-feature-item">
+                <i class="fa-solid fa-circle free-icon"></i>
+                <p class="plan-feature-p">
+                  The main focus is on the technique and making sure you can practice it <i>correctly</i> alone. No supervised practice, only enough to ensure you can practice safely alone.
+                </p>
+              </li>
+              <li class="plan-feature-item">
+                <i class="fa-solid fa-circle free-icon"></i>
+                <p class="plan-feature-p">
+                  Submit recordings publicly in the One Voice server for me to evaluate when available
+                </p>
+              </li>
+              <li class="plan-feature-item">
+                <i class="fa-solid fa-circle free-icon"></i>
+                <p class="plan-feature-p">
+                  Less flexible scheduling / availability; less personalization possibilities due to having less time
+                </p>
+              </li>
+              <a href="https://discord.gg/8khKvfHG" target="_blank" class="plan-btn free-btn"
+                >Get Free Lessons at One Voice</a
+              >
+            </ul>
+          </div>
+
+          <div class="plan-box paid">
+            <h3 class="plan-heading">Paid Lessons</h3>
+            <ul class="plan-feature-list">
+              <li class="plan-feature-item">
+                <i class="fa-solid fa-circle paid-icon"></i>
+                <p class="plan-feature-p">
+                  30-minute and 1-hour options (can do 2 hours at a time), unlimited times per week
+                </p>
+              </li>
+              <li class="plan-feature-item">
+                <i class="fa-solid fa-circle paid-icon"></i>
+                <p class="plan-feature-p">
+                  We focus both on technique AND supervised practice
+                </p>
+              </li>
+              <li class="plan-feature-item">
+                <i class="fa-solid fa-circle paid-icon"></i>
+                <p class="plan-feature-p">
+                  Submit recordings privately for me to evaluate as soon as possible
+                </p>
+              </li>
+              <li class="plan-feature-item">
+                <i class="fa-solid fa-circle paid-icon"></i>
+                <p class="plan-feature-p">
+                  More personalization possibilities due to having more time and your own personal space for us to share everything we do
+                </p>
+              </li>
+              <a class="plan-btn paid-btn" href="https://docs.google.com/forms/d/1dW-N6xyf7ATc6zCIL0rR1I63EN4A4U6JghhPA6xi2pM/viewform?edit_requested=true">
+                Apply for Private Paid Lessons
+              </a>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="calendly-section">
+        <div class="calendly-container">
+          <h2 class="main-subheading calendly-heading">Schedule a Lesson</h2>
+          <!-- Calendly inline widget begin -->
+          <div class="calendly-inline-widget" data-url="https://calendly.com/miavocalcoach?hide_landing_page_details=1&primary_color=fc9cea"></div>
+          <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+          <!-- Calendly inline widget end -->
+        </div>
+      </section>
+
+      <section class="contacts-section">
+        <div class="contacts-container">
+          <div class="contact-box">
+            <h2>Have a Question?</h2>
+            <form action="https://formspree.io/f/xkneonrz"
+            method="POST">
+              <div class="form-flex">
+                <div class="form-pair">                
+                  <label for="name">Name</label>
+                <input  placeholder="John Titor" id="name" name="name" type="text" required/>
+              </div>
+              <div class="form-pair">              
+                <label for="email">Email Address</label>
+                <input  placeholder="youremail@gmail.com" id="email" name="email" type="email" required/>
+              </div>
+              <div class="form-pair">     
+                <label for="subject">Subject</label>
+                <input  placeholder="Subject of the message (optional)" id="subject" name="subject" type="text"/>
+              </div>
+              
+              <div class="form-pair">
+                <label for="message">Message</label>
+                <textarea type="text" placeholder="Type your message here..." id="message" name="message" required></textarea>
+              </div>
+            </div>
+              <button type="submit">Submit</button>
+            </form>
+          </div>
+        </div>
+      </section>
 
     <section class="testimonials-section" id="t">
       <div class="testimonials-container">
@@ -387,7 +548,5 @@
       nomodule
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
     ></script>
-
-    <script src="js/script.js"></script>
   </body>
 </html>

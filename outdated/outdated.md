@@ -1,3 +1,205 @@
+# CTA Section
+
+## HTML
+
+    <section class="cta-section">
+      <div class="cta-container">
+        <div class="cta-box ov-box">
+          <img src="/img/webp/ov.webp" alt="One Voice discord server logo" />
+          <h2 class="cta-heading ov-heading">One Voice</h2>
+          <p class="cta-description ov-description">
+            Weekly free 1-on-1 30-minute voice lessons, weekly karaokes,
+            information on health for singing, and a resource library with a
+            supportive community!
+          </p>
+          <a
+            href="https://discord.gg/8khKvfHG"
+            target="_blank"
+            class="cta-btn ov-btn cta-btn-trans"
+            >To One Voice</a
+          >
+        </div>
+        <div class="cta-box lessons-box">
+          <img
+            src="/img/webp/mia-pfp.webp"
+            alt="MiaVocalCoach: Mia discord profile picture"
+          />
+          <h2 class="cta-heading lessons-heading">My Lessons</h2>
+          <p class="cta-description lessons-description">
+            Choose from my free AND paid options!
+          </p>
+          <a href="lessons/" class="cta-btn lessons-btn">To Lessons</a>
+        </div>
+        <div class="cta-box patreon-box">
+          <img
+            src="/img/webp/mia-patron.webp"
+            alt="MiaVocalCoach Patreon logo"
+          />
+          <h2 class="cta-heading patreon-heading">Support me on Patreon!</h2>
+          <p class="cta-description patreon-description">
+            Get exclusive perks!
+          </p>
+          <a
+            href="https://www.patreon.com/MiaVocalCoach"
+            target="_blank"
+            class="cta-btn patreon-btn cta-btn-trans"
+            >To Patreon</a
+          >
+        </div>
+      </div>
+    </section>
+
+## CSS
+
+/_ ////////////////////
+CTA SECTION
+//////////////////// _/
+
+.cta-section {
+padding: 4.8rem 0;
+padding-bottom: 12rem;
+border-bottom: 1px solid rgb(215, 215, 215);
+}
+
+.cta-section img {
+width: 15rem;
+border-radius: 50%;
+margin-bottom: 2.4rem;
+}
+
+.cta-container {
+max-width: 120rem;
+margin: 0 auto;
+
+display: flex;
+justify-content: space-around;
+}
+
+.cta-box {
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+
+box-shadow: 0 3px 12px rgba(0, 0, 0, 0.2);
+width: 30%;
+padding: 4.8rem 3rem;
+padding-bottom: 5.2rem;
+border-radius: 12px;
+transition: all 0.2s ease-out;
+}
+
+.cta-box:hover {
+transform: scale(1.03);
+}
+
+.cta-heading {
+color: #2b2b2b;
+font-size: 3rem;
+line-height: 1.3;
+margin-bottom: 1rem;
+font-weight: 600;
+}
+
+.cta-description {
+font-size: 1.8rem;
+line-height: 1.6;
+color: #555;
+}
+
+.cta-btn {
+display: block;
+font-size: 2rem;
+margin-top: auto;
+color: #262626;
+text-align: center;
+/_ width: 100%; _/
+padding: 1.3rem 3.2rem;
+border: 1px solid;
+border-radius: 30px;
+font-weight: 600;
+transition: all 0.1s;
+letter-spacing: normal;
+}
+
+.cta-btn-trans {
+}
+
+/_ Individual styling _/
+
+/_ ov _/
+.ov-box {
+}
+
+.ov-heading {
+}
+
+.ov-description {
+margin-bottom: 3.2rem;
+color: #222;
+}
+
+.ov-btn:hover {
+background-color: #333;
+border-color: #333;
+color: #fff;
+}
+
+/_ lessons _/
+.lessons-box {
+background-color: #d63e73;
+box-shadow: 0 3px 9px rgba(0, 0, 0, 0.4);
+}
+
+.lessons-box:hover {
+box-shadow: 0 4px 9px rgba(0, 0, 0, 0.4);
+}
+
+.lessons-heading {
+color: #fff;
+font-weight: 700;
+}
+
+.lessons-description {
+color: #fff;
+font-weight: 500;
+}
+
+.lessons-btn {
+background-color: #fff;
+border: none;
+}
+
+.lessons-btn:hover {
+color: #fff;
+background-color: #a2b6ff;
+}
+
+/_ patreon _/
+.patreon-box {
+background-color: #ffd0e5;
+}
+
+.patreon-box:hover {
+box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+}
+
+.patreon-heading {
+}
+
+.patreon-description {
+color: #222;
+}
+
+.patreon-btn {
+background-color: #fff;
+border: none;
+}
+
+.patreon-btn:hover {
+background-color: #d63e73;
+color: #fff;
+}
+
 # Macky's lesson
 
 ## HTML
@@ -26,6 +228,87 @@ controls
 </div>
 <p class="video-title">Macky's first (free) lesson</p>
 </section>
+
+## CSS
+
+/_ ////////////////////
+VIDEO SECTION
+//////////////////// _/
+
+.video-section {
+padding: 6.4rem 0;
+background-color: #e3e3e3;
+/_ background-color: #f2f2f2; _/
+}
+
+.video-container {
+position: relative;
+padding: 0 6%;
+justify-content: center;
+align-items: center;
+display: flex;
+flex-direction: column;
+margin: 0 auto;
+}
+
+.lesson-thumbnail {
+position: relative;
+width: 75rem;
+cursor: pointer;
+/_ box-shadow: 0 1.5px 10px rgba(0, 0, 0, 0.4); _/
+}
+
+.play-btn {
+display: inline-block;
+font-size: 4rem;
+color: rgb(249, 76, 76);
+margin-left: 3px;
+z-index: 1;
+}
+
+.play-btn-box {
+display: flex;
+justify-content: center;
+align-items: center;
+border-radius: 50%;
+height: 8rem;
+width: 8rem;
+background-color: rgba(255, 255, 255, 0.9);
+position: absolute;
+cursor: pointer;
+}
+
+.play-btn-box::after {
+position: absolute;
+content: "";
+height: 10rem;
+width: 10rem;
+border-radius: 50%;
+background-color: rgba(255, 255, 255, 0.4);
+cursor: pointer;
+}
+
+.hidden {
+display: hidden;
+}
+
+.none {
+display: none;
+}
+
+.video {
+position: absolute;
+width: 75rem;
+z-index: 3;
+}
+
+.video-title {
+color: #262626;
+font-size: 2.6rem;
+text-align: center;
+margin-top: 2rem;
+font-weight: 400;
+}
 
 # Old Testimonials style
 
