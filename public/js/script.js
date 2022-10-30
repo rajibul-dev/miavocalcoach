@@ -1,11 +1,5 @@
 "use strict";
 
-// https://ipinfo.io/json?token=3e985ec775d67c
-// 3e985ec775d67c
-
-// To do:
-// 1. A bit bigger text on mobile
-
 // For video, the former popup style
 // const thumbnail = document.querySelector('.video-action')
 // const videoBtn = document.querySelector('.play-btn-box')
@@ -59,3 +53,20 @@ window.addEventListener("scroll", () => {
 toTop.addEventListener("click", function () {
   window.scrollTo(0, 0);
 });
+
+// Implementing US prices
+const currency = document.querySelectorAll(".currency");
+const prices = document.querySelectorAll(".dynamic-price");
+
+async function fetchText() {
+  let url = "https://ipinfo.io/json?token=3e985ec775d67c";
+  let response = await fetch(url);
+  let data = await response.json();
+  console.log(data.country);
+
+  // data.country = "US";
+  if (data.country === "US") {
+    currency.forEach((cur) => (cur.textContent = "$"));
+  }
+}
+fetchText();
