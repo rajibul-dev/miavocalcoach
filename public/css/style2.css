@@ -411,10 +411,10 @@ PRICING SECTION
 }
 
 .euro {
-  font-size: 3.4rem;
+  font-size: 4rem;
   font-weight: 700;
-  margin-right: 5px;
-  color: #777;
+  margin-right: 2px;
+  /* color: #777; */
 }
 
 .pricing-section .main-btn {

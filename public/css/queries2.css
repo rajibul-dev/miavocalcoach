@@ -192,7 +192,7 @@ PRICING SECTION
     font-size: 4.4rem;
   }
   .euro {
-    font-size: 2.8rem;
+    font-size: 3.4rem;
   }
   .pricing-heading,
   .plan-flex {
@@ -348,5 +348,17 @@ CALENDLY SECTION
 @media (max-width: 33em) {
   .plans-section {
     padding-bottom: 8rem;
+  }
+}
+
+/* Increase font size on phone */
+@media (max-width: 30.5em) {
+  .feature-text,
+  .plan-feature-p,
+  .contact-box label,
+  .contact-box textarea,
+  .contact-box input,
+  .contact-box button {
+    font-size: 1.86rem;
   }
 }

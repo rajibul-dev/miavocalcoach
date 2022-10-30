@@ -1,4 +1,10 @@
-'use strict'
+"use strict";
+
+// https://ipinfo.io/json?token=3e985ec775d67c
+// 3e985ec775d67c
+
+// To do:
+// 1. A bit bigger text on mobile
 
 // For video, the former popup style
 // const thumbnail = document.querySelector('.video-action')
@@ -47,9 +53,9 @@ window.addEventListener("scroll", () => {
     toTop.classList.add("active");
   } else {
     toTop.classList.remove("active");
-  };
+  }
 });
 
-toTop.addEventListener('click', function () {
+toTop.addEventListener("click", function () {
   window.scrollTo(0, 0);
 });
