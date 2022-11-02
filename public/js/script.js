@@ -82,7 +82,7 @@ nonFirstallNavLinks.forEach((link) => {
 
       if (href2 === "#calendly") {
         window.scrollTo({
-          top: offsetPosition - 30,
+          top: offsetPosition - 44,
           behavior: "smooth",
         });
       } else if (href2 === "#pricing") {
