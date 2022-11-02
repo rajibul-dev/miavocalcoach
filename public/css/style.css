@@ -24,6 +24,7 @@ body {
   font-weight: 400;
   color: #2b2b2b;
   overflow-x: hidden;
+  position: relative;
 }
 
 p,
@@ -56,7 +57,7 @@ HEADER
   top: 0;
   bottom: 0;
   width: 100%;
-  z-index: 999;
+  z-index: 65;
 
   height: 7.2rem;
   background-color: rgba(255, 255, 255, 0.97);
@@ -84,6 +85,10 @@ HEADER
   width: 5rem;
 }
 
+.nav-container {
+  height: 100%;
+}
+
 .nav-flex {
   display: flex;
   align-items: stretch;
@@ -103,6 +108,22 @@ HEADER
 
 .nav-links:hover {
   color: #c62d65;
+}
+
+/* MOBILE NAVIGATION BUTTON */
+.hide-bars {
+  display: none;
+}
+
+.hamburger {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.nav-btn {
+  height: 2.4rem;
+  width: 2.4rem;
 }
 
 /* ////////////////////

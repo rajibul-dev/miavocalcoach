@@ -41,6 +41,7 @@
     <link href="css/queries.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/style2.css" />
     <link rel="stylesheet" href="css/queries2.css" />
+    <!-- <link href="your-project-dir/icon-font/lineicons.css" rel="stylesheet"> -->
     <script src="js/script.js" defer></script>
     <script src="js/lessons.js" defer></script>
 
@@ -93,6 +94,7 @@
     <title>MiaVocalCoach</title>
   </head>
   <body>
+    <div class="mobile-nav-container"></div>
 
     <header class="header-section">
       <div class="header-container">
@@ -101,15 +103,24 @@
           <source srcset="img/miavocalcoach-logo.png" type="image/png" />
           <img class="header-logo" src="img/miavocalcoach-logo.png" alt="MiaVocalCoach" />
         </picture>
-        <nav class="nav-flex">
-          <a class="nav-links" href="#about">About Me</a>
-          <a class="nav-links" href="#lessons">Objective</a>
-          <a class="nav-links" href="#lesson-options">Lesson Options</a>
-          <a class="nav-links" href="#pricing">Pricing</a>
-          <!-- <a class="nav-links" href="#calendly">Schedule Lesson</a> -->
-          <a class="nav-links" href="#contact">Contact Me</a>
-          <a class="nav-links" href="#testimonials">Testimonials</a>
+        <nav class="nav-container">
+          <button class="hamburger hide-bars hamburger-in-nav">
+            <img class="nav-btn nav-icon-inside" src="img/svg/menu.svg" alt="Menu button">
+          </button>
+          <div class="nav-flex">
+            <a class="nav-links" href="#about">About Me</a>
+            <a class="nav-links" href="#lessons">Objective</a>
+            <a class="nav-links" href="#lesson-options">Lesson Options</a>
+            <a class="nav-links" href="#pricing">Pricing</a>
+            <a class="nav-links hide-bars" href="#calendly">Schedule a Lesson</a>
+            <a class="nav-links" href="#contact">Contact Me</a>
+            <a class="nav-links" href="#testimonials">Testimonials</a>
+          </div>
         </nav>
+
+        <button class="hamburger hide-bars">
+          <img class="nav-btn" src="img/svg/menu.svg" alt="Menu button">
+        </button>
       </div>
     </header>
 

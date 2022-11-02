@@ -68,6 +68,31 @@ nonFirstallNavLinks.forEach((link2) => {
 });
 
 //////////////////////////////////////
+// Making Mobile Navigation work
+//////////////////////////////////////
+
+const navContainer = document.querySelector(".nav-container");
+const navContainerHTML = navContainer.innerHTML;
+const body = document.querySelector("body");
+
+// window.addEventListener(
+//   "resize",
+//   function () {
+//     document.addEventListener("DOMContentLoaded", function () {
+//       let query = window.matchMedia("(max-width: 450px)");
+//       if (query.matches) {
+//         document.querySelector("h1").textContent = "Uff";
+//         console.log("Changed HTML");
+//       } else {
+//         console.log("Put back the OG HTML");
+//         document.querySelector("h1").textContent = "Working!";
+//       }
+//     });
+//   },
+//   true,
+// );
+
+//////////////////////////////////////
 // Implementing US prices
 //////////////////////////////////////
 const currency = document.querySelectorAll(".currency");
