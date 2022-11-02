@@ -1,43 +1,8 @@
 "use strict";
 
-// For video, the former popup style
-// const thumbnail = document.querySelector('.video-action')
-// const videoBtn = document.querySelector('.play-btn-box')
-// const overlay = document.querySelector('.overlay')
-// const closeBtn = document.querySelector('.xmark')
-// const video = document.querySelector('.yt-embed')
-
-// const playClick = function () {
-//   overlay.classList.remove('none')
-//   video.classList.remove('none')
-//   closeBtn.classList.remove('none')
-// }
-// const closeClick = function () {
-//   overlay.classList.add('none')
-//   video.classList.add('none')
-//   closeBtn.classList.add('none')
-// }
-
-// thumbnail.addEventListener('click', playClick)
-// videoBtn.addEventListener('click', playClick)
-// closeBtn.addEventListener('click', closeClick)
-// overlay.addEventListener('click', closeClick)
-
-// For video
-// const vidPreArea = document.querySelector('.video-action');
-// const thumbnail = document.querySelector('.lesson-thumbnail');
-// const videoBtn = document.querySelector('.play-btn-box');
-// const video = document.querySelector('.video');
-
-// const playClick = function () {
-//   vidPreArea.classList.add('hidden');
-//   thumbnail.classList.add('hidden');
-//   video.classList.remove('none');
-//   video.play()
-// };
-
-// thumbnail.addEventListener('click', playClick)
-// videoBtn.addEventListener('click', playClick)
+//////////////////////////////////////
+// Navigation Smooth scrolling
+//////////////////////////////////////
 
 // Back to top button
 const toTop = document.querySelector(".btt");
@@ -51,10 +16,53 @@ window.addEventListener("scroll", () => {
 });
 
 toTop.addEventListener("click", function () {
-  window.scrollTo(0, 0);
+  window.scrollTo({ top: 0, behavior: "smooth" });
 });
 
+// Gathering navigation links
+let firstNavLink;
+const nonFirstallNavLinks = [];
+const allLinks = document.querySelectorAll("a:link");
+
+allLinks.forEach((link) => {
+  const href = link.getAttribute("href");
+  if (href.startsWith("#") && href !== "#about") nonFirstallNavLinks.push(link);
+  if (href === "#about") firstNavLink = link;
+});
+
+// For about section nav link
+firstNavLink.addEventListener("click", (e) => {
+  e.preventDefault();
+  window.scrollTo({ top: 0, behavior: "smooth" });
+});
+
+// For all the other nav links
+nonFirstallNavLinks.forEach((link2) => {
+  link2.addEventListener("click", (e) => {
+    e.preventDefault();
+    const href2 = link2.getAttribute("href");
+
+    function scrollToTargetAdjusted() {
+      const element = document.querySelector(href2);
+      const headerOffset = document
+        .querySelector("header")
+        .getBoundingClientRect().height;
+      const elementPosition = element.getBoundingClientRect().top;
+      const offsetPosition =
+        elementPosition + window.pageYOffset - headerOffset;
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: "smooth",
+      });
+    }
+    scrollToTargetAdjusted();
+  });
+});
+
+//////////////////////////////////////
 // Implementing US prices
+//////////////////////////////////////
 const currency = document.querySelectorAll(".currency");
 const prices = document.querySelectorAll(".dynamic-price");
 
@@ -62,7 +70,7 @@ async function fetchText() {
   let url = "https://ipinfo.io/json?token=3e985ec775d67c";
   let response = await fetch(url);
   let data = await response.json();
-  console.log(data.country);
+  // console.log(data.country);
 
   // data.country = "US";
   if (data.country === "US") {
