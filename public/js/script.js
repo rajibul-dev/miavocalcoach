@@ -15,9 +15,16 @@ window.addEventListener("scroll", () => {
   }
 });
 
-toTop.addEventListener("click", function () {
-  window.scrollTo({ top: 0, behavior: "smooth" });
-});
+toTop.addEventListener("click", () =>
+  window.scrollTo({ top: 0, behavior: "smooth" }),
+);
+
+// Logo to homepage
+const logoLink = document.querySelector(".logo-link");
+
+logoLink.addEventListener("click", () =>
+  window.scrollTo({ top: 0, behavior: "smooth" }),
+);
 
 // Gathering navigation links
 let firstNavLink;
