@@ -141,8 +141,8 @@ PLANS SECTION
 .plans-section {
   background-color: #f3f0ff;
   color: #222121;
-  padding-top: 4.8rem;
-  padding-bottom: 12rem;
+  padding-top: 8rem;
+  padding-bottom: 4.8rem;
 }
 
 .plans-container {
@@ -336,8 +336,8 @@ PRICING SECTION
 
 .pricing-section {
   background-color: #f3f0ff;
-  padding-bottom: 4.8rem;
-  padding-top: 9.6rem;
+  padding-top: 6.4rem;
+  padding-bottom: 12rem;
 }
 
 .pricing-container {

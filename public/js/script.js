@@ -1,6 +1,24 @@
 "use strict";
 
 //////////////////////////////////////
+// Making Mobile Navigation work
+//////////////////////////////////////
+
+const mobileNavContainer = document.querySelector(".mobile-nav-container");
+const mobileNavBtnOut = document.querySelector(".nav-icon-outside");
+const mobileNavIn = document.querySelector(".nav-icon-inside");
+const overlay = document.querySelector(".overlay");
+
+function openCloseNav() {
+  mobileNavContainer.classList.toggle("mobile-nav-open");
+  overlay.classList.toggle("overlay-open");
+}
+
+mobileNavBtnOut.addEventListener("click", openCloseNav);
+overlay.addEventListener("click", openCloseNav);
+mobileNavIn.addEventListener("click", openCloseNav);
+
+//////////////////////////////////////
 // Navigation Smooth scrolling
 //////////////////////////////////////
 
@@ -27,27 +45,31 @@ logoLink.addEventListener("click", () =>
 );
 
 // Gathering navigation links
-let firstNavLink;
+const firstNavLink = [];
 const nonFirstallNavLinks = [];
 const allLinks = document.querySelectorAll("a:link");
 
 allLinks.forEach((link) => {
   const href = link.getAttribute("href");
   if (href.startsWith("#") && href !== "#about") nonFirstallNavLinks.push(link);
-  if (href === "#about") firstNavLink = link;
+  if (href === "#about") firstNavLink.push(link);
 });
 
 // For about section nav link
-firstNavLink.addEventListener("click", (e) => {
-  e.preventDefault();
-  window.scrollTo({ top: 0, behavior: "smooth" });
+firstNavLink.forEach((link) => {
+  link.addEventListener("click", (e) => {
+    e.preventDefault();
+    window.scrollTo({ top: 0, behavior: "smooth" });
+    mobileNavContainer.classList.toggle("mobile-nav-open");
+    overlay.classList.toggle("overlay-open");
+  });
 });
 
 // For all the other nav links
-nonFirstallNavLinks.forEach((link2) => {
-  link2.addEventListener("click", (e) => {
+nonFirstallNavLinks.forEach((link) => {
+  link.addEventListener("click", (e) => {
     e.preventDefault();
-    const href2 = link2.getAttribute("href");
+    const href2 = link.getAttribute("href");
 
     function scrollToTargetAdjusted() {
       const element = document.querySelector(href2);
@@ -58,39 +80,28 @@ nonFirstallNavLinks.forEach((link2) => {
       const offsetPosition =
         elementPosition + window.pageYOffset - headerOffset;
 
-      window.scrollTo({
-        top: offsetPosition,
-        behavior: "smooth",
-      });
+      if (href2 === "#calendly") {
+        window.scrollTo({
+          top: offsetPosition - 30,
+          behavior: "smooth",
+        });
+      } else if (href2 === "#pricing") {
+        window.scrollTo({
+          top: offsetPosition + 30,
+          behavior: "smooth",
+        });
+      } else {
+        window.scrollTo({
+          top: offsetPosition,
+          behavior: "smooth",
+        });
+      }
     }
     scrollToTargetAdjusted();
+    mobileNavContainer.classList.toggle("mobile-nav-open");
+    overlay.classList.toggle("overlay-open");
   });
 });
-
-//////////////////////////////////////
-// Making Mobile Navigation work
-//////////////////////////////////////
-
-const navContainer = document.querySelector(".nav-container");
-const navContainerHTML = navContainer.innerHTML;
-const body = document.querySelector("body");
-
-// window.addEventListener(
-//   "resize",
-//   function () {
-//     document.addEventListener("DOMContentLoaded", function () {
-//       let query = window.matchMedia("(max-width: 450px)");
-//       if (query.matches) {
-//         document.querySelector("h1").textContent = "Uff";
-//         console.log("Changed HTML");
-//       } else {
-//         console.log("Put back the OG HTML");
-//         document.querySelector("h1").textContent = "Working!";
-//       }
-//     });
-//   },
-//   true,
-// );
 
 //////////////////////////////////////
 // Implementing US prices

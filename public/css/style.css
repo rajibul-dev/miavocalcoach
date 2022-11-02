@@ -111,14 +111,21 @@ HEADER
 }
 
 /* MOBILE NAVIGATION BUTTON */
+
+.mobile-nav-container {
+  display: none;
+}
+
 .hide-bars {
   display: none;
 }
 
-.hamburger {
-  border: none;
-  background: none;
-  cursor: pointer;
+.nav-icon-outside {
+  display: none;
+}
+
+.open {
+  display: block;
 }
 
 .nav-btn {
@@ -508,13 +515,15 @@ TESTIMONIALS SECTION
   line-height: 1.3;
   text-transform: uppercase;
 
-  color: transparent;
+  /* color: transparent;
   background-image: linear-gradient(
     146deg,
     rgba(115, 29, 255, 1) 0%,
     rgba(231, 0, 81, 1) 100%
   );
-  -webkit-background-clip: text;
+  -webkit-background-clip: text; */
+
+  color: #d02b7e;
 
   transition: all 0.2s ease;
   padding: 0;

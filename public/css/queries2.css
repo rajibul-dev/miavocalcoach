@@ -135,7 +135,7 @@ PLANS SECTION
   .plan-box {
     width: 80%;
   }
-  .plans-section {
+  #pricing {
     padding-top: 4rem;
     /* padding-bottom: 10rem; */
   }
@@ -149,8 +149,11 @@ PLANS SECTION
   .plan-box {
     padding-bottom: 6.4rem;
   }
+  #lesson-options {
+    padding-bottom: 2.6rem;
+  }
   #pricing {
-    padding-bottom: 6.4rem;
+    padding-top: 2.6rem;
   }
 }
 
@@ -250,7 +253,7 @@ FIXING SPACES FOR SMALLER SCREEN DEVICES
 ///////////////////// */
 
 @media (max-width: 33.8em) {
-  .main-section {
+  #pricing {
     padding-top: 8rem;
     padding-bottom: 8rem;
   }
@@ -341,8 +344,8 @@ CALENDLY SECTION
 }
 /* Minor adjustment */
 @media (max-width: 64em) {
-  .plans-section {
-    padding-bottom: 10.6rem;
+  #pricing {
+    padding-bottom: 8rem;
   }
 }
 @media (max-width: 33em) {
@@ -360,5 +363,12 @@ CALENDLY SECTION
   .contact-box input,
   .contact-box button {
     font-size: 1.86rem;
+  }
+}
+
+/* Some adjustments */
+@media (max-width: 25.175em) {
+  #lesson-options {
+    padding-top: 6.4rem;
   }
 }

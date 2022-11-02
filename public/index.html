@@ -94,7 +94,20 @@
     <title>MiaVocalCoach</title>
   </head>
   <body>
-    <div class="mobile-nav-container"></div>
+    <div class="overlay"></div>
+
+    <nav class="mobile-nav-container">
+      <img class="nav-icon-inside" src="img/svg/menu.svg" alt="Menu button">     
+      <div class="mobile-nav-flex">
+        <a class="mobile-nav-links" href="#about">About Me</a>
+        <a class="mobile-nav-links" href="#lessons">Objective</a>
+        <a class="mobile-nav-links" href="#lesson-options">Lesson Options</a>
+        <a class="mobile-nav-links" href="#pricing">Pricing</a>
+        <a class="mobile-nav-links" href="#calendly">Schedule a Lesson</a>
+        <a class="mobile-nav-links" href="#contact">Contact Me</a>
+        <a class="mobile-nav-links" href="#testimonials">Testimonials</a>
+      </div>
+    </nav>
 
     <header class="header-section">
       <div class="header-container">
@@ -104,9 +117,6 @@
           <img class="header-logo" src="img/miavocalcoach-logo.png" alt="MiaVocalCoach" />
         </picture>
         <nav class="nav-container">
-          <button class="hamburger hide-bars hamburger-in-nav">
-            <img class="nav-btn nav-icon-inside" src="img/svg/menu.svg" alt="Menu button">
-          </button>
           <div class="nav-flex">
             <a class="nav-links" href="#about">About Me</a>
             <a class="nav-links" href="#lessons">Objective</a>
@@ -117,10 +127,9 @@
             <a class="nav-links" href="#testimonials">Testimonials</a>
           </div>
         </nav>
-
-        <button class="hamburger hide-bars">
-          <img class="nav-btn" src="img/svg/menu.svg" alt="Menu button">
-        </button>
+       
+        <img class="nav-icon-outside" src="img/svg/menu.svg" alt="Menu button">
+        
       </div>
     </header>
 
@@ -284,51 +293,6 @@
       </div>
     </section>
 
-    <section id="pricing" class="pricing-section">
-      <div class="pricing-container">
-        <div class="pricing-box">
-          <h2 class="pricing-heading plan-heading">Paid Lesson Options</h2>
-          <div class="plans">
-            <div class="plan-flex">
-              <div class="plan-text">
-                <h3>Singular 30 minute Lesson</h3>
-                <p>A short session to get you going in the right direction!</p>
-              </div>
-              <span class="price"><span class="euro currency">€</span><span class='dynamic-price'>40</span>
-            </div>
-            <div class="plan-flex">
-              <div class="plan-text">
-                <h3>Singular One hour Lesson</h3>
-                <p>Enough time for us to give plenty of attention to technique, supervised practice and/or song work!</p>
-              </div>
-              <span class="price"><span class="euro currency">€</span><span class='dynamic-price'>80</span>
-            </div>
-            <div class="plan-flex">
-              <div class="plan-text">
-                <h3>30 minute Package of 4</h3>
-                <p>
-                  4 Lessons for the price of 3!<br>
-                  <s><span class="currency">€</span><span class='dynamic-price'>160</span></s> <strong><span class="currency">€</span><span class="dynamic-price">120</span></strong> (<span class="currency">€</span><span class="dynamic-price">30</span> on average per lesson)
-                </p>
-              </div>
-              <span class="price"><span class="euro currency">€</span><span class='dynamic-price'>120</span>
-            </div>
-            <div class="plan-flex">
-              <div class="plan-text">
-                <h3>1 hour Package of 4</h3>
-                <p>
-                  4 Lessons for the price of 3!<br>
-                  <s><span class="currency">€</span><span class="dynamic-price">320</span></s> <strong><span class="currency">€</span><span class="dynamic-price">240</span></strong> (<span class="currency">€</span><span class="dynamic-price">60</span> on average per lesson) (Recommended)
-                </p>
-              </div>
-              <span class="price"><span class="euro currency">€</span><span class='dynamic-price'>240</span>
-            </div>
-          </div>
-          <a href="https://docs.google.com/forms/d/1dW-N6xyf7ATc6zCIL0rR1I63EN4A4U6JghhPA6xi2pM/viewform?edit_requested=true" class="main-btn">Apply for Private Paid Lessons</a>
-        </div>
-      </div>
-    </section>
-    
     <section id="lesson-options" class="plans-section">
       <div class="plans-container">        
         <h2 class="main-subheading more-margin">My current options for lessons</h2>
@@ -399,6 +363,51 @@
             </ul>
           </div>
         </div>
+    </section>
+
+    <section id="pricing" class="pricing-section">
+      <div class="pricing-container">
+        <div class="pricing-box">
+          <h2 class="pricing-heading plan-heading">Paid Lesson Options</h2>
+          <div class="plans">
+            <div class="plan-flex">
+              <div class="plan-text">
+                <h3>Singular 30 minute Lesson</h3>
+                <p>A short session to get you going in the right direction!</p>
+              </div>
+              <span class="price"><span class="euro currency">€</span><span class='dynamic-price'>40</span>
+            </div>
+            <div class="plan-flex">
+              <div class="plan-text">
+                <h3>Singular One hour Lesson</h3>
+                <p>Enough time for us to give plenty of attention to technique, supervised practice and/or song work!</p>
+              </div>
+              <span class="price"><span class="euro currency">€</span><span class='dynamic-price'>80</span>
+            </div>
+            <div class="plan-flex">
+              <div class="plan-text">
+                <h3>30 minute Package of 4</h3>
+                <p>
+                  4 Lessons for the price of 3!<br>
+                  <s><span class="currency">€</span><span class='dynamic-price'>160</span></s> <strong><span class="currency">€</span><span class="dynamic-price">120</span></strong> (<span class="currency">€</span><span class="dynamic-price">30</span> on average per lesson)
+                </p>
+              </div>
+              <span class="price"><span class="euro currency">€</span><span class='dynamic-price'>120</span>
+            </div>
+            <div class="plan-flex">
+              <div class="plan-text">
+                <h3>1 hour Package of 4</h3>
+                <p>
+                  4 Lessons for the price of 3!<br>
+                  <s><span class="currency">€</span><span class="dynamic-price">320</span></s> <strong><span class="currency">€</span><span class="dynamic-price">240</span></strong> (<span class="currency">€</span><span class="dynamic-price">60</span> on average per lesson) (Recommended)
+                </p>
+              </div>
+              <span class="price"><span class="euro currency">€</span><span class='dynamic-price'>240</span>
+            </div>
+          </div>
+          <a href="https://docs.google.com/forms/d/1dW-N6xyf7ATc6zCIL0rR1I63EN4A4U6JghhPA6xi2pM/viewform?edit_requested=true" class="main-btn">Apply for Private Paid Lessons</a>
+        </div>
+      </div>
     </section>
 
     <section id="calendly" class="calendly-section">
