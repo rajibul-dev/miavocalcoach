@@ -1,0 +1,443 @@
+/* /////////////////////
+SCALE SHIFT
+///////////////////// */
+
+@media (max-width: 68em) {
+  html {
+    font-size: 56.25%;
+  }
+}
+
+@media (max-width: 64em) {
+  html {
+    font-size: 50%;
+  }
+}
+
+/* ////////////////////
+One column, social grid, for touch screen devices, landscape tablets basically
+Below 900px
+//////////////////// */
+
+/* To close Discord button earlier than before, well, I can also reduce the gap */
+@media (max-width: 75em) {
+  .wrapper .button:nth-child(1).open {
+    display: none;
+  }
+  .wrapper .button:nth-child(1).close {
+    display: inline-block;
+    width: 6rem;
+  }
+  .wrapper .button:nth-child(1):hover.close {
+    display: inline-block;
+    width: 34.5rem;
+  }
+  .wrapper .button:nth-child(1):hover {
+    background-color: #5865f2;
+  }
+  .wrapper .button:nth-child(1):hover .icon-box {
+    background-color: #5865f2;
+  }
+}
+
+/* ////////////////////
+Shifting to one column
+Below 822px
+//////////////////// */
+
+@media (max-width: 56.25em) {
+  .about-container {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    gap: 4.8rem;
+  }
+  .img-box {
+    width: 50%;
+  }
+  .about-box {
+    width: 70%;
+  }
+}
+
+/* For making the social section in 2 rows */
+@media (max-width: 44.5em) {
+  .materials-grid {
+    grid-template-columns: 1fr;
+    gap: 6.2rem;
+    justify-content: center;
+  }
+  .bbs {
+    grid-column: 1/2;
+  }
+  .material-blcok {
+    width: 68%;
+    justify-items: center;
+    grid-template-columns: 1fr;
+  }
+
+  .material-text {
+    padding: 0;
+  }
+}
+/* For fixing the about text and the main pfp,
+basically the img box */
+@media (max-width: 49.125em) {
+  .img-box {
+    width: 60%;
+  }
+}
+@media (max-width: 41.75em) {
+  .img-box {
+    width: 70%;
+  }
+}
+@media (max-width: 37.25em) {
+  .img-box {
+    width: 80%;
+  }
+}
+@media (max-width: 32.5em) {
+  .img-box {
+    width: 90%;
+  }
+}
+@media (max-width: 29em) {
+  .img-box {
+    width: 100%;
+  }
+}
+
+/* about box width */
+@media (max-width: 42.625em) {
+  .about-box {
+    width: 100%;
+  }
+}
+/* Materials container width */
+@media (max-width: 37.75em) {
+  .material-blcok {
+    width: 90%;
+  }
+}
+@media (max-width: 35.7em) {
+  .materials-container {
+    padding: 0 6%;
+  }
+  .material-blcok {
+    width: 100%;
+  }
+}
+
+/* Social components, to make it responsive
+Making it a grid and removing the hover effect */
+@media (max-width: 48.75em) {
+  body .socials-section .wrapper .button:hover {
+    width: 6rem;
+  }
+  .wrapper .button:nth-child(1):hover.open {
+    width: 6rem;
+  }
+  .wrapper .button:nth-child(4):hover {
+    width: 6rem;
+  }
+  .wrapper .button:nth-child(7):hover {
+    width: 6rem;
+  }
+  .wrapper .button:nth-child(1):hover {
+    background-color: #5865f2;
+  }
+  .wrapper .button:nth-child(1):hover .icon-box {
+    background-color: #5865f2;
+  }
+  /* For making a zooming on hover effect */
+  body .socials-section .wrapper .button:hover {
+    transform: scale(1.1);
+  }
+
+  .wrapper .button:nth-child(2):hover {
+    display: inline-block;
+    width: 6rem;
+    height: 6rem;
+    transform: translate(0);
+  }
+  .wrapper .tr-up:hover {
+    transform: translateX(0) translateY(0);
+  }
+  .button:nth-child(2):hover .mar-top {
+    transform: translate(0);
+  }
+
+  /* about box width */
+  .about-box {
+    width: 100%;
+  }
+  .about-container {
+    padding: 0 8%;
+  }
+}
+
+/* Flex container padding */
+@media (max-width: 31.25em) {
+  .about-container {
+    padding: 0 8%;
+  }
+}
+
+/* Mobile spacing fix */
+@media (max-width: 33.8em) {
+  .socials-section {
+    padding-bottom: 8rem;
+  }
+  .testimonials-section {
+    padding-top: 8rem;
+  }
+}
+
+/* For using Lato font on join ov heading */
+@media (min-width: 44.75em) {
+  .join-ov-heading {
+    letter-spacing: 2pt;
+    word-spacing: 2pt;
+  }
+}
+@media (max-width: 44.75em) {
+  .join-ov-heading {
+    letter-spacing: 1pt;
+  }
+}
+@media (max-width: 39.375em) {
+  html body .socials-section .wrapper {
+    padding-left: 0;
+    padding-right: 0;
+    height: 100%;
+  }
+  .socials-section {
+    padding-top: 6.4rem;
+    padding-bottom: 8rem;
+  }
+  /* .button:nth-child(1) {
+    grid-row: 1;
+    grid-column: 1/2;
+  }
+  .button:nth-child(2) {
+    grid-row: 1;
+    grid-column: 2/4;
+  }
+  .button:nth-child(3) {
+    grid-row: 1;
+    grid-column: 4/6;
+  }
+  .button:nth-child(4) {
+    grid-row: 1;
+    grid-column: 6/8;
+  }
+  .button:nth-child(5) {
+    grid-row: 2;
+    grid-column: 1 / 3;
+    justify-self: start;
+  } */
+  /* .button:nth-child(6) {
+    grid-row: 2;
+    grid-column: 4 /6;
+  } */
+  /* .button:nth-child(7) {
+    grid-row: 2;
+    grid-column: 5 / 7;
+  } */
+}
+
+/* For fixing the 3 line heading of the last heading */
+
+/* Last heading letter and word spacing */
+
+/* Font sizes (px) 10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98 
+
+- Spacing system (px) 2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128 */
+
+@media (max-width: 24.875em) {
+  html body .socials-section .wrapper {
+    transform: scale(0.9);
+    gap: 3rem;
+  }
+}
+
+/* For increasing the padding of the join ov heading */
+@media (min-width: 39.75em) {
+  .join-ov-heading {
+    padding-top: 1.2rem;
+    padding-bottom: 1.2rem;
+  }
+}
+
+/* Making the video responsive */
+@media (max-width: 51em) {
+  .lesson-thumbnail,
+  .video {
+    width: 60rem;
+  }
+}
+@media (max-width: 33.75em) {
+  .lesson-thumbnail,
+  .video {
+    width: 50rem;
+  }
+}
+@media (max-width: 27.875em) {
+  .lesson-thumbnail,
+  .video {
+    width: 48rem;
+  }
+}
+@media (max-width: 26em) {
+  .lesson-thumbnail,
+  .video {
+    width: 46rem;
+  }
+}
+@media (max-width: 23.5em) {
+  .lesson-thumbnail,
+  .video {
+    width: 40rem;
+  }
+}
+@media (max-width: 21.25em) {
+  .lesson-thumbnail,
+  .video {
+    width: 37rem;
+  }
+}
+
+/* /////////////////////
+CTA SECTION
+///////////////////// */
+
+@media (max-width: 60.25em) {
+  .cta-container {
+    flex-direction: column;
+    margin: 0 auto;
+    align-items: center;
+    gap: 4.8rem;
+  }
+  .cta-box {
+    width: 45rem;
+  }
+  .ov-description {
+    margin: 0;
+  }
+  .cta-btn {
+    margin-top: 2.4rem;
+  }
+  .cta-box:hover {
+    transform: scale(1);
+  }
+  .ov-box:hover {
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.2);
+  }
+  .lessons-box:hover {
+    box-shadow: 0 3px 9px rgba(0, 0, 0, 0.4);
+  }
+  .patreon-box:hover {
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.2);
+  }
+}
+
+@media (max-width: 27.75em) {
+  .cta-section {
+    padding-top: 2.4rem;
+  }
+  .cta-box {
+    width: 89%;
+  }
+  .testimonials-section {
+    padding-top: 6.4rem;
+  }
+  .testimonials-heading {
+    margin-bottom: 4rem;
+  }
+}
+
+/* /////////////////////
+TESTIMONIALS SECTION
+///////////////////// */
+
+@media (max-width: 27.75em) {
+  .testimonials-heading {
+    letter-spacing: normal;
+    font-weight: 700;
+    text-align: start;
+    padding-left: 2rem;
+  }
+  .message-box {
+    box-shadow: none;
+    padding-right: 5rem;
+    padding-left: 5rem;
+  }
+}
+
+@media (max-width: 26.375em) {
+  .testimonials-heading {
+    font-size: 3.6rem;
+    margin-bottom: 4.8rem;
+  }
+  .testimonials-container {
+    padding: 0 5%;
+  }
+  .message-box {
+    padding-left: 8%;
+    padding-right: 8%;
+  }
+}
+
+/* /////////////////////
+PATREON SECTION
+///////////////////// */
+
+@media (max-width: 42.5em) {
+  .patreon-heading {
+    font-size: 2.5rem;
+    margin-bottom: 1.4rem;
+  }
+  .patreon-wrapper {
+    width: 41rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0;
+    padding: 4.2rem 3rem;
+  }
+  .patreon-button {
+    margin: 0;
+    padding: 1.3rem 4.4rem;
+  }
+  .img-patreon {
+    margin-bottom: 2.8rem;
+    width: 14rem;
+  }
+  .patreon-text {
+    margin-bottom: 3.2rem;
+  }
+  .socials-section {
+    padding-bottom: 6.4rem;
+  }
+  .patreon-section {
+    padding-bottom: 8;
+  }
+}
+@media (max-width: 25em) {
+  .patreon-wrapper {
+    width: 97%;
+  }
+}
+@media (max-width: 21.5em) {
+  .patreon-heading {
+    line-height: 1.3;
+  }
+}
+
+/* Increase font size on phone */
+@media (max-width: 30.5em) {
+  .about-text,
+  .patreon-p,
+  .message {
+    font-size: 1.86rem;
+  }
+}
