@@ -26,7 +26,7 @@ mobileNavIn.addEventListener("click", openCloseNav);
 const toTop = document.querySelector(".btt");
 
 window.addEventListener("scroll", () => {
-  if (window.pageYOffset > 6500) {
+  if (window.pageYOffset > 8000) {
     toTop.classList.add("active");
   } else {
     toTop.classList.remove("active");
