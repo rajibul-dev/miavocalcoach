@@ -495,7 +495,7 @@ PATREON SECTION
     height: 100vh;
     width: 40%;
     transition: all 0.2s ease;
-    overflow: scroll;
+    overflow-y: scroll;
 
     /* Go to the right side */
     transform: translateX(100%);
@@ -560,5 +560,11 @@ PATREON SECTION
 @media (max-width: 25.5em) {
   .mobile-nav-container {
     width: 69%;
+  }
+}
+
+@media (max-height: 31.125em) {
+  .mobile-nav-container {
+    padding-bottom: 9.6rem;
   }
 }
