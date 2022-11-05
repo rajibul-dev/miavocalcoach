@@ -64,7 +64,8 @@ firstNavLink.forEach((link) => {
     window.scrollTo({ top: 0, behavior: "smooth" });
     mobileNavContainer.classList.toggle("mobile-nav-open");
     overlay.classList.toggle("overlay-open");
-    html.classList.toggle("no-scroll");
+    if (link.classList.contains("mobile-nav-links"))
+      html.classList.toggle("no-scroll");
   });
 });
 
@@ -103,7 +104,8 @@ nonFirstallNavLinks.forEach((link) => {
     scrollToTargetAdjusted();
     mobileNavContainer.classList.toggle("mobile-nav-open");
     overlay.classList.toggle("overlay-open");
-    html.classList.toggle("no-scroll");
+    if (link.classList.contains("mobile-nav-links"))
+      html.classList.toggle("no-scroll");
   });
 });
 
