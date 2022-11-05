@@ -372,3 +372,9 @@ CALENDLY SECTION
     padding-top: 6.4rem;
   }
 }
+
+@media (max-height: 30.5em) {
+  .mobile-nav-container {
+    padding-bottom: 5.2rem;
+  }
+}

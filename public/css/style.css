@@ -133,6 +133,10 @@ HEADER
   width: 2.4rem;
 }
 
+.no-scroll {
+  overflow-y: hidden;
+}
+
 /* ////////////////////
 ABOUT SECTION
 //////////////////// */

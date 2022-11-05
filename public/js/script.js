@@ -8,10 +8,12 @@ const mobileNavContainer = document.querySelector(".mobile-nav-container");
 const mobileNavBtnOut = document.querySelector(".nav-icon-outside");
 const mobileNavIn = document.querySelector(".nav-icon-inside");
 const overlay = document.querySelector(".overlay");
+const html = document.querySelector("html");
 
 function openCloseNav() {
   mobileNavContainer.classList.toggle("mobile-nav-open");
   overlay.classList.toggle("overlay-open");
+  html.classList.toggle("no-scroll");
 }
 
 mobileNavBtnOut.addEventListener("click", openCloseNav);
@@ -62,6 +64,7 @@ firstNavLink.forEach((link) => {
     window.scrollTo({ top: 0, behavior: "smooth" });
     mobileNavContainer.classList.toggle("mobile-nav-open");
     overlay.classList.toggle("overlay-open");
+    html.classList.toggle("no-scroll");
   });
 });
 
@@ -100,6 +103,7 @@ nonFirstallNavLinks.forEach((link) => {
     scrollToTargetAdjusted();
     mobileNavContainer.classList.toggle("mobile-nav-open");
     overlay.classList.toggle("overlay-open");
+    html.classList.toggle("no-scroll");
   });
 });
 
