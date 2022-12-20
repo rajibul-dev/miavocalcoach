@@ -1,3 +1,7 @@
+/* ////////////////////
+IMPORTS
+//////////////////// */
+
 @import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&family=Fredoka+One&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
@@ -6,11 +10,38 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Roboto:wght@300;400;500;700;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
+/* ////////////////////
+GLOBAL RESET
+//////////////////// */
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
+
+/* ////////////////////
+VARIABLES
+//////////////////// */
+
+:root {
+  --primary-gray: #222;
+  --secondary-gray: #2b2b2b;
+  --somewhat-different-gray: #222121;
+
+  --btn-pink: #ee588c;
+  --pink-text: #c62d65;
+
+  --font-size-h1: 3.2rem;
+  --font-size-secondary-heading: 3.6rem;
+  --font-size-tertiary: 2.4rem;
+  --font-size-small-p: 1.6rem;
+  --font-size-p-primary: 1.8rem;
+}
+
+/* ////////////////////
+GENERAL REUSABLE
+//////////////////// */
 
 html {
   font-size: 62.5%;
@@ -21,7 +52,7 @@ body {
   font-family: "Montserrat", sans-serif;
   line-height: 1;
   font-weight: 400;
-  color: #222;
+  color: var(--primary-gray);
   overflow-x: hidden;
   position: relative;
 }
@@ -33,10 +64,6 @@ li {
 .italic-text {
   font-style: italic;
 }
-
-/* ////////////////////
-GENERAL REUSABLE
-//////////////////// */
 
 p,
 blockquote {
@@ -109,12 +136,12 @@ HEADER
   justify-content: center;
   color: #000;
   font-weight: 500;
-  font-size: 1.6rem;
+  font-size: var(--font-size-small-p);
   transition: all 0.1s;
 }
 
 .nav-links:hover {
-  color: #c62d65;
+  color: var(--pink-text);
 }
 
 /* MOBILE NAVIGATION BUTTON */
@@ -189,11 +216,11 @@ ABOUT SECTION
   font-weight: 500;
   margin-bottom: 2.4rem;
   letter-spacing: normal;
-  color: #2b2b2b;
+  color: var(--secondary-gray);
 }
 
 .about-text {
-  font-size: 1.8rem;
+  font-size: var(--font-size-p-primary);
   line-height: 1.7;
   color: #000;
 }
@@ -484,13 +511,13 @@ PATREON SECTION
 }
 
 .patreon-p {
-  font-size: 1.8rem;
+  font-size: var(--font-size-p-primary);
 }
 
 .patreon-button {
   margin-left: auto;
-  background-color: #ee588c;
-  font-size: 1.8rem;
+  background-color: var(--btn-pink);
+  font-size: var(--font-size-p-primary);
   color: #fff;
   padding: 1.1rem 2.2rem;
   border-radius: 12px;
@@ -520,7 +547,7 @@ OBJECTIVE SECTION
   display: table;
   margin: 0 auto;
   text-transform: uppercase;
-  font-size: 3.6rem;
+  font-size: var(--font-size-secondary-heading);
   font-weight: 800;
   text-align: center;
   margin-bottom: 9.6rem;
@@ -544,7 +571,7 @@ OBJECTIVE SECTION
 
 .main-subheading {
   font-weight: 600;
-  font-size: 3.6rem;
+  font-size: var(--font-size-secondary-heading);
   line-height: 1.3;
   margin-bottom: 2.8rem;
 }
@@ -556,7 +583,7 @@ OBJECTIVE SECTION
 }
 
 .feature-text {
-  font-size: 1.8rem;
+  font-size: var(--font-size-p-primary);
   color: #555;
   line-height: 1.7;
   /* letter-spacing: 0.4pt; */
@@ -564,7 +591,7 @@ OBJECTIVE SECTION
 }
 
 strong {
-  color: #222;
+  color: var(--primary-gray);
 }
 
 .yourserver-img {
@@ -578,7 +605,7 @@ PLANS SECTION
 
 .plans-section {
   background-color: #f3f0ff;
-  color: #222121;
+  color: var(--somewhat-different-gray);
   padding-top: 8rem;
   padding-bottom: 4.8rem;
 }
@@ -602,9 +629,7 @@ PLANS SECTION
   margin-bottom: 7.2rem;
   text-align: center;
   font-weight: 600;
-  font-size: 3.6rem;
-  /* letter-spacing: 0.6pt; */
-  /* word-spacing: 0.3rem; */
+  font-size: var(--font-size-secondary-heading);
 }
 
 .card-flex {
@@ -625,14 +650,14 @@ PLANS SECTION
 }
 
 .plan-box p {
-  font-size: 1.8rem;
+  font-size: var(--font-size-p-primary);
   line-height: 1.6;
   letter-spacing: 0.4pt;
   font-weight: 499;
 }
 
 .plan-heading {
-  font-size: 3.6rem;
+  font-size: var(--font-size-secondary-heading);
   margin-bottom: 4.4rem;
   font-weight: 500;
   /* letter-spacing: 0.6pt; */
@@ -657,8 +682,6 @@ PLANS SECTION
 .free-icon,
 .paid-icon {
   font-size: 2.4rem;
-  /* font-size: 1.4rem; */
-
   transform: translateY(14%);
 }
 
@@ -667,7 +690,7 @@ PLANS SECTION
 }
 
 .plan-btn:link {
-  font-size: 1.8rem;
+  font-size: var(--font-size-p-primary);
   width: 100%;
   display: block;
   padding: 1.4rem;
@@ -683,16 +706,16 @@ PLANS SECTION
 
 .free-btn.plan-btn {
   background-color: transparent;
-  border: 1px solid #222121;
-  color: #222121;
+  border: 1px solid var(--somewhat-different-gray);
+  color: var(--somewhat-different-gray);
   font-weight: 500;
   text-align: center;
 }
 
 .free-btn.plan-btn:hover {
   text-decoration: none;
-  background-color: #222;
-  border-color: #222;
+  background-color: var(--primary-gray);
+  border-color: var(--primary-gray);
   color: #fff;
   font-weight: 700;
 }
@@ -750,7 +773,7 @@ PLANS SECTION
   width: 100%;
   font-weight: 600;
   /* box-shadow: 0 3px 12px rgba(0, 0, 0, 0.2); */
-  font-size: 1.8rem;
+  font-size: var(--font-size-p-primary);
   border-radius: 14px;
   text-align: center;
   transition: all 0.1s ease-in;
@@ -829,15 +852,15 @@ PRICING SECTION
 }
 
 .plan-text h3 {
-  font-size: 2.4rem;
+  font-size: var(--font-size-tertiary);
   margin-bottom: 0.8rem;
   letter-spacing: 0.4pt;
   font-weight: 600;
 }
 
 .plan-text p {
-  font-size: 1.8rem;
-  color: #222;
+  font-size: var(--font-size-p-primary);
+  color: var(--primary-gray);
   line-height: 1.5;
 }
 
@@ -861,10 +884,10 @@ PRICING SECTION
   margin-left: 5rem;
   margin-right: 5rem;
 
-  background-color: #ee588c;
+  background-color: var(--btn-pink);
   color: #fff;
 
-  font-size: 2.4rem;
+  font-size: var(--font-size-tertiary);
   text-align: center;
   margin-top: 6.8rem;
   font-weight: 700;
@@ -938,12 +961,12 @@ CONTACTS SECTION
 
 .contact-box h2 {
   font-weight: 500;
-  font-size: 3.6rem;
+  font-size: var(--font-size-secondary-heading);
   margin-bottom: 5.2rem;
 }
 
 .contact-box form {
-  font-size: 1.8rem;
+  font-size: var(--font-size-p-primary);
 }
 
 .form-flex {
@@ -995,11 +1018,11 @@ textarea::-webkit-scrollbar {
 }
 
 .contact-box button {
-  background-color: #ee588c;
+  background-color: var(--btn-pink);
   color: #fff;
   border: none;
   margin-top: 3rem;
-  font-size: 1.8rem;
+  font-size: var(--font-size-p-primary);
   margin-left: auto;
   margin-right: auto;
   display: table;
@@ -1067,15 +1090,10 @@ TESTIMONIALS SECTION
   background-color: #ffedf5;
   box-shadow: 1rem 1rem 0 #e649804c;
   border-radius: 10px;
-
-  /* background-color: #ffecf4; */
-  /* background-color: #ffe6f1; */
-  /* background-color: #e8a7bb; */
-  /* box-shadow: 1rem 1rem 0 #e649804c; */
 }
 
 .message {
-  font-size: 1.8rem;
+  font-size: var(--font-size-p-primary);
   line-height: 1.7;
   letter-spacing: normal;
   font-weight: 500;
@@ -1086,19 +1104,11 @@ TESTIMONIALS SECTION
   line-height: 1.7;
   letter-spacing: 0.2pt;
   font-weight: 500;
-  /* text-align: start; */
 }
-
-/* .message {
-  color: #555;
-}
-.student-name {
-  color: #666;
-} */
 
 .message,
 .student-name {
-  color: #c62d65;
+  color: var(--pink-text);
 }
 
 /* ////////////////////
@@ -1108,7 +1118,7 @@ BACK TO TOP BUTTON
 .btt {
   position: fixed;
 
-  font-size: 1.8rem;
+  font-size: var(--font-size-p-primary);
 
   height: 6rem;
   width: 6rem;
