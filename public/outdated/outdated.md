@@ -1,3 +1,174 @@
+# Old Pricing Section
+
+## HTML
+
+    <section id="pricing" class="pricing-section">
+      <div class="pricing-container">
+        <div class="pricing-box">
+          <h2 class="pricing-heading plan-heading">Paid Lesson Options</h2>
+          <div class="plans">
+            <div class="plan-flex">
+              <div class="plan-text">
+                <h3>Singular 30 minute Lesson</h3>
+                <p>A short session to get you going in the right direction!</p>
+              </div>
+              <span class="price"><span class="euro currency">€</span><span class='dynamic-price'>40</span>
+            </div>
+            <div class="plan-flex">
+              <div class="plan-text">
+                <h3>Singular One hour Lesson</h3>
+                <p>Enough time for us to give plenty of attention to technique, supervised practice and/or song work!</p>
+              </div>
+              <span class="price"><span class="euro currency">€</span><span class='dynamic-price'>80</span>
+            </div>
+            <div class="plan-flex">
+              <div class="plan-text">
+                <h3>30 minute Package of 4</h3>
+                <p>
+                  4 Lessons for the price of 3!<br>
+                  <s><span class="currency">€</span><span class='dynamic-price'>160</span></s> <strong><span class="currency">€</span><span class="dynamic-price">120</span></strong> (<span class="currency">€</span><span class="dynamic-price">30</span> on average per lesson)
+                </p>
+              </div>
+              <span class="price"><span class="euro currency">€</span><span class='dynamic-price'>120</span>
+            </div>
+            <div class="plan-flex">
+              <div class="plan-text">
+                <h3>1 hour Package of 4</h3>
+                <p>
+                  4 Lessons for the price of 3!<br>
+                  <s><span class="currency">€</span><span class="dynamic-price">320</span></s> <strong><span class="currency">€</span><span class="dynamic-price">240</span></strong> (<span class="currency">€</span><span class="dynamic-price">60</span> on average per lesson) (Recommended)
+                </p>
+              </div>
+              <span class="price"><span class="euro currency">€</span><span class='dynamic-price'>240</span>
+            </div>
+          </div>
+          <a href="https://docs.google.com/forms/d/1dW-N6xyf7ATc6zCIL0rR1I63EN4A4U6JghhPA6xi2pM/viewform?edit_requested=true" class="main-btn">Apply for Private Paid Lessons</a>
+        </div>
+      </div>
+    </section>
+
+## CSS
+
+/_ ////////////////////
+PRICING SECTION
+//////////////////// _/
+
+.pricing-section {
+background-color: #f3f0ff;
+padding-top: 6.4rem;
+padding-bottom: 12rem;
+}
+
+.pricing-container {
+max-width: 130rem;
+margin: 0 auto;
+padding: 0 5%;
+}
+
+.pricing-box {
+background-color: #fff;
+padding: 6.4rem 0;
+width: 69rem;
+box-shadow: 0 3px 14px rgba(0, 0, 0, 0.2);
+border-radius: 6px;
+transition: all 0.2s ease-out;
+margin: 0 auto;
+}
+
+.pricing-heading {
+font-weight: 500;
+padding: 0 5rem;
+margin-bottom: 6.8rem;
+/_ text-align: center; _/
+}
+
+.plans {
+display: flex;
+flex-direction: column;
+}
+
+.plan-flex {
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 2.4rem 5rem;
+border-bottom: 1px solid #bbb;
+}
+.plan-flex:first-child {
+padding-top: 0;
+}
+.plan-flex:last-child {
+border-bottom: none;
+padding-bottom: 0;
+}
+
+.plan-text {
+display: flex;
+flex-direction: column;
+
+width: 65%;
+}
+
+.plan-text h3 {
+font-size: var(--font-size-tertiary);
+margin-bottom: 0.8rem;
+letter-spacing: 0.4pt;
+font-weight: 600;
+}
+
+.plan-text p {
+font-size: var(--font-size-p-primary);
+color: var(--primary-gray);
+line-height: 1.5;
+}
+
+.price {
+font-family: "Inter", sans-serif;
+letter-spacing: -2pt;
+font-size: 5.2rem;
+font-weight: 500;
+}
+
+.euro {
+font-size: 4rem;
+font-weight: 700;
+margin-right: 2px;
+/_ color: #777; _/
+}
+
+.pricing-section .main-btn {
+display: block;
+padding: 1.7rem;
+margin-left: 5rem;
+margin-right: 5rem;
+
+background-color: var(--btn-pink);
+color: #fff;
+
+font-size: var(--font-size-tertiary);
+text-align: center;
+margin-top: 6.8rem;
+font-weight: 700;
+text-transform: uppercase;
+
+box-shadow: 0 2px 4px rgb(0, 0, 0, 0.4);
+transition: all 0.1s ease-out;
+border-radius: 14px;
+}
+
+.pricing-section .main-btn:hover {
+background-color: #ff77a7;
+text-decoration: none;
+}
+
+## JS (When scroll needed)
+
+} else if (href2 === "#pricing") {
+window.scrollTo({
+top: offsetPosition + 30,
+behavior: "smooth",
+});
+
 # Lessons page
 
 ## HTML

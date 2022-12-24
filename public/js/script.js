@@ -89,11 +89,6 @@ nonFirstallNavLinks.forEach((link) => {
           top: offsetPosition - 44,
           behavior: "smooth",
         });
-      } else if (href2 === "#pricing") {
-        window.scrollTo({
-          top: offsetPosition + 30,
-          behavior: "smooth",
-        });
       } else {
         window.scrollTo({
           top: offsetPosition,
@@ -119,9 +114,7 @@ async function fetchText() {
   let url = "https://ipinfo.io/json?token=3e985ec775d67c";
   let response = await fetch(url);
   let data = await response.json();
-  // console.log(data.country);
 
-  // data.country = "US";
   if (data.country === "US") {
     currency.forEach((cur) => (cur.textContent = "$"));
   }
