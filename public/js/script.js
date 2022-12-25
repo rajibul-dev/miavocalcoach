@@ -113,17 +113,53 @@ nonFirstallNavLinks.forEach((link) => {
 
 //////////////////////////////////////
 // Implementing US prices
+// HANDLING PAYMENTS WITH PAYPAL
 //////////////////////////////////////
 const currency = document.querySelectorAll(".currency");
 const prices = document.querySelectorAll(".dynamic-price");
 
-async function fetchText() {
+const buyBtns = document.querySelectorAll(".buy-btn");
+
+const checkoutEl = document.querySelector(".dynamic-checkout");
+const paypalPopup = document.querySelector(".payment-popup");
+const overlay2 = document.querySelector(".overlay2");
+const closeBtn = document.querySelector(".close-btn");
+
+const price40 = document.querySelector(".buy-btn-40");
+const price80 = document.querySelector(".buy-btn-80");
+const price120 = document.querySelector(".buy-btn-120");
+const price240 = document.querySelector(".buy-btn-240");
+
+const openPopup = function () {
+  overlay2.classList.add("overlay-open2");
+  paypalPopup.classList.add("popup-open");
+  html.classList.add("no-scroll");
+};
+const closePopup = function () {
+  overlay2.classList.remove("overlay-open2");
+  paypalPopup.classList.remove("popup-open");
+  html.classList.remove("no-scroll");
+};
+
+buyBtns.forEach((button) => {
+  button.addEventListener("click", openPopup);
+});
+[overlay2, closeBtn].forEach((element) => {
+  element.addEventListener("click", closePopup);
+});
+
+async function fetchLocation() {
   let url = "https://ipinfo.io/json?token=3e985ec775d67c";
   let response = await fetch(url);
   let data = await response.json();
+  return data.country;
+}
 
-  if (data.country === "US") {
+async function getCountry() {
+  const userCountry = await fetchLocation();
+
+  if (userCountry === "IN") {
     currency.forEach((cur) => (cur.textContent = "$"));
   }
 }
-fetchText();
+getCountry();

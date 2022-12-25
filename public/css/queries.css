@@ -803,10 +803,6 @@ PATREON SECTION
     display: none;
   }
 
-  /* .header-section {
-    height: 7rem;
-  } */
-
   .header-container {
     padding: 0 8%;
   }
@@ -852,8 +848,14 @@ PATREON SECTION
     transition: all 0.2s ease;
     overflow-y: scroll;
 
+    -ms-overflow-style: none; /* Internet Explorer 10+ */
+    scrollbar-width: none; /* Firefox */
+
     /* Go to the right side */
     transform: translateX(100%);
+  }
+  .mobile-nav-container::-webkit-scrollbar {
+    display: none; /* Safari and Chrome */
   }
 
   .mobile-nav-open {
@@ -931,12 +933,17 @@ PATREON SECTION
     row-gap: 4.8rem;
   }
   .box-pricing {
-    /* height: 38rem; */
     height: auto;
     width: 45rem;
   }
   .item-description {
-    margin-bottom: 4.8rem;
+    margin-bottom: 5.4rem;
+  }
+  .price {
+    font-size: 5rem;
+  }
+  .item-name {
+    font-size: 2.4rem;
   }
 }
 
@@ -952,5 +959,12 @@ PATREON SECTION
     width: 95%;
     padding-left: 2.5rem;
     padding-right: 2.5rem;
+  }
+}
+
+/* Paypal buttons */
+@media (max-width: 33.25em) {
+  .payment-popup {
+    width: 85%;
   }
 }

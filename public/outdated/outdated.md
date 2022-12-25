@@ -1,5 +1,20 @@
 # If bug comes
 
+## HTML some
+
+    <div class="overlay2"></div>
+
+    <div class="payment-popup">
+      <header>
+        <h2>Pay via PayPal</h2>
+        <img class="close-btn" src="img/svg/close.svg" alt="Close button">
+      </header>
+      <div class="dynamic-checkout">
+        <!-- <h3 class="pop-up-price"><span class="currency">€</span>240</h3>
+        <p class="pop-up-item-name">Package of 4 one hour voice lessons</p> -->
+      </div>
+    </div>
+
 ## The nav opens weiredly
 
 // if (link.classList.contains("paid-btn")) {
