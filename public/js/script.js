@@ -97,10 +97,12 @@ nonFirstallNavLinks.forEach((link) => {
       }
     }
     scrollToTargetAdjusted();
-    mobileNavContainer.classList.toggle("mobile-nav-open");
-    overlay.classList.toggle("overlay-open");
-    if (link.classList.contains("mobile-nav-links"))
-      html.classList.toggle("no-scroll");
+    if (!link.classList.contains("paid-btn")) {
+      mobileNavContainer.classList.toggle("mobile-nav-open");
+      overlay.classList.toggle("overlay-open");
+      if (link.classList.contains("mobile-nav-links"))
+        html.classList.toggle("no-scroll");
+    }
   });
 });
 

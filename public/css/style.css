@@ -37,7 +37,7 @@ VARIABLES
   --font-size-h1: 3.2rem;
   --font-size-secondary-heading: 3.6rem;
   --font-size-tertiary: 2.4rem;
-  --font-size-small-p: 1.6rem;
+  --font-size-small-p: 1.5rem;
   --font-size-p-primary: 1.8rem;
 }
 
@@ -99,8 +99,8 @@ HEADER
   background-color: rgba(255, 255, 255, 0.97);
   /* padding-left: 10rem;
   padding-right: 131px; */
-  /* box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.03); */
-  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
+  /* box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1); */
+  box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.03);
 }
 
 .header-container {
@@ -251,7 +251,9 @@ SOCIAL COMPONENT
   background-color: #fff;
   border-radius: 50px;
   cursor: pointer;
-  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.3);
+  /* box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.3); */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+
   overflow: hidden;
   transition: all 0.3s ease;
 }
@@ -499,6 +501,7 @@ PATREON SECTION
   align-items: center;
   gap: 2rem;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.14);
 }
 
 .img-patreon {
@@ -609,7 +612,7 @@ PLANS SECTION
   background-color: #f3f0ff;
   color: var(--somewhat-different-gray);
   padding-top: 8rem;
-  padding-bottom: 4.8rem;
+  padding-bottom: 5rem;
 }
 
 .plans-container {
@@ -643,10 +646,12 @@ PLANS SECTION
 .plan-box {
   background-color: #fff;
   padding: 4.8rem 4rem;
-  box-shadow: 0 3px 14px rgba(0, 0, 0, 0.2);
+
+  /* box-shadow: 0 3px 14px rgba(0, 0, 0, 0.2); */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
   width: 50%;
   border-radius: 6px;
-  /* height: 66rem; */
   transition: all 0.2s ease-out;
   padding-bottom: 9.6rem;
 }
@@ -733,7 +738,8 @@ PLANS SECTION
 
   /* In hex: #fe5ab4 #5e1cc9 */
 
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+  /* box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3); */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .free:hover,
@@ -743,11 +749,13 @@ PLANS SECTION
 }
 
 .free:hover {
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  /* box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); */
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
 }
 
 .paid:hover {
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  /* box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); */
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
 }
 
 /* dark */
@@ -798,7 +806,7 @@ PRICING SECTION
 
 .section-pricing {
   background-color: #f3f0ff;
-  padding-top: 6.4rem;
+  padding-top: 5rem;
   padding-bottom: 12rem;
 }
 .container-pricing {
@@ -868,7 +876,6 @@ PRICING SECTION
   padding: 1.2rem;
   font-size: var(--font-size-p-primary);
   font-weight: 700;
-  text-transform: uppercase;
   border-radius: 6px;
   transition: all 0.1s ease;
 }
@@ -921,7 +928,8 @@ CALENDLY SECTION
   width: 44rem;
   height: 49.1rem;
   margin: 0 auto;
-  box-shadow: 0 3px 14px rgba(0, 0, 0, 0.2);
+  /* box-shadow: 0 3px 14px rgba(0, 0, 0, 0.2); */
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
 }
 
 /* ////////////////////
@@ -943,7 +951,8 @@ CONTACTS SECTION
 
 .contact-box {
   background-color: #ffd8ec;
-  box-shadow: 0 3px 14px rgba(0, 0, 0, 0.2);
+  /* box-shadow: 0 3px 14px rgba(0, 0, 0, 0.2); */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   border-radius: 6px;
   padding: 5rem;
   max-width: 55rem;
@@ -1123,9 +1132,6 @@ BACK TO TOP BUTTON
   font-weight: 500;
 
   text-shadow: 1.6px 1.6px 1.6px rgba(0, 0, 0, 0.2);
-  /* box-shadow: 1.6px 2px 4px rgba(0, 0, 0, 0.2), 2px 3px 4px rgba(0, 0, 0, 0.2); */
-
-  box-shadow: 0.5px 1px 3px rgba(0, 0, 0, 0.4);
 
   transition: all ease 0.05s;
 

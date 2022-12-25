@@ -1,3 +1,13 @@
+# If bug comes
+
+## The nav opens weiredly
+
+// if (link.classList.contains("paid-btn")) {
+// mobileNavContainer.classList.remove("mobile-nav-open");
+// overlay.classList.remove("overlay-open");
+// html.classList.remove("no-scroll");
+// }
+
 # Old Pricing Section
 
 ## HTML
