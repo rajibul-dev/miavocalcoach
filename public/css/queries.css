@@ -458,11 +458,11 @@ PLANS SECTION
 
 @media (max-width: 51.125em) {
   .plan-box.free:hover {
-    box-shadow: 0 3px 14px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   }
 
   .plan-box.paid:hover {
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
   }
   .plan-box.free:hover,
   .plan-box.paid:hover {
@@ -942,7 +942,7 @@ PATREON SECTION
 
 @media (max-width: 26.375em) {
   .item-description {
-    font-size: 1.77rem;
+    font-size: 1.8rem;
   }
   .pricing-h2 {
     text-align: start;
@@ -950,7 +950,7 @@ PATREON SECTION
   }
   .box-pricing {
     width: 95%;
-    padding-left: 3rem;
-    padding-right: 3rem;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
   }
 }

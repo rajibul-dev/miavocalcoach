@@ -89,6 +89,11 @@ nonFirstallNavLinks.forEach((link) => {
           top: offsetPosition - 44,
           behavior: "smooth",
         });
+      } else if (href2 === "#pricing") {
+        window.scrollTo({
+          top: offsetPosition - 11,
+          behavior: "smooth",
+        });
       } else {
         window.scrollTo({
           top: offsetPosition,
