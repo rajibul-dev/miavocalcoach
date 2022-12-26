@@ -848,14 +848,8 @@ PATREON SECTION
     transition: all 0.2s ease;
     overflow-y: scroll;
 
-    -ms-overflow-style: none; /* Internet Explorer 10+ */
-    scrollbar-width: none; /* Firefox */
-
     /* Go to the right side */
     transform: translateX(100%);
-  }
-  .mobile-nav-container::-webkit-scrollbar {
-    display: none; /* Safari and Chrome */
   }
 
   .mobile-nav-open {

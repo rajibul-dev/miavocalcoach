@@ -1,6 +1,17 @@
 "use strict";
 
 //////////////////////////////////////
+// Contact form expansion
+//////////////////////////////////////
+const textArea = document.querySelector("textarea");
+
+textArea.addEventListener("keyup", (e) => {
+  textArea.style.height = "";
+  let setHeight = e.target.scrollHeight;
+  textArea.style.height = setHeight + "px";
+});
+
+//////////////////////////////////////
 // Making Mobile Navigation work
 //////////////////////////////////////
 
@@ -115,6 +126,198 @@ nonFirstallNavLinks.forEach((link) => {
 // Implementing US prices
 // HANDLING PAYMENTS WITH PAYPAL
 //////////////////////////////////////
+const paypalButtons = {
+  euro40: `<div id="smart-button-container">
+  <div style="text-align: center;">
+    <div id="paypal-button-container"></div>
+  </div>
+</div>
+<script src="https://www.paypal.com/sdk/js?client-id=sb&enable-funding=venmo&currency=EUR" data-sdk-integration-source="button-factory"></script>
+<script>
+function initPayPalButton() {
+  paypal.Buttons({
+    style: {
+      shape: 'pill',
+      color: 'white',
+      layout: 'vertical',
+      label: 'buynow',
+      
+    },
+
+    createOrder: function(data, actions) {
+      return actions.order.create({
+        purchase_units: [{"description":"Singular 30-minute voice lesson","amount":{"currency_code":"EUR","value":40}}]
+      });
+    },
+
+    onApprove: function(data, actions) {
+      return actions.order.capture().then(function(orderData) {
+
+        // Full available details
+        console.log('Capture result', orderData, JSON.stringify(orderData, null, 2));
+
+        // Show a success message within this page, e.g.
+        const element = document.getElementById('paypal-button-container');
+        element.innerHTML = '';
+        element.innerHTML = '<h3>Thank you for your payment!</h3>';
+
+        // Or go to another URL:  actions.redirect('thank_you.html');
+
+      });
+    },
+
+    onError: function(err) {
+      console.log(err);
+    }
+  }).render('#paypal-button-container');
+}
+initPayPalButton();
+
+</script>
+`,
+  euro80: `<div id="smart-button-container">
+  <div style="text-align: center;">
+    <div id="paypal-button-container"></div>
+  </div>
+</div>
+<script src="https://www.paypal.com/sdk/js?client-id=sb&enable-funding=venmo&currency=EUR" data-sdk-integration-source="button-factory"></script>
+<script>
+function initPayPalButton() {
+  paypal.Buttons({
+    style: {
+      shape: 'pill',
+      color: 'white',
+      layout: 'vertical',
+      label: 'buynow',
+      
+    },
+
+    createOrder: function(data, actions) {
+      return actions.order.create({
+        purchase_units: [{"description":"Singular 1 hour voice lesson","amount":{"currency_code":"EUR","value":80}}]
+      });
+    },
+
+    onApprove: function(data, actions) {
+      return actions.order.capture().then(function(orderData) {
+
+        // Full available details
+        console.log('Capture result', orderData, JSON.stringify(orderData, null, 2));
+
+        // Show a success message within this page, e.g.
+        const element = document.getElementById('paypal-button-container');
+        element.innerHTML = '';
+        element.innerHTML = '<h3>Thank you for your payment!</h3>';
+
+        // Or go to another URL:  actions.redirect('thank_you.html');
+
+      });
+    },
+
+    onError: function(err) {
+      console.log(err);
+    }
+  }).render('#paypal-button-container');
+}
+initPayPalButton();
+
+</script>`,
+  euro120: `<div id="smart-button-container">
+  <div style="text-align: center;">
+    <div id="paypal-button-container"></div>
+  </div>
+</div>
+<script src="https://www.paypal.com/sdk/js?client-id=sb&enable-funding=venmo&currency=EUR" data-sdk-integration-source="button-factory"></script>
+<script>
+function initPayPalButton() {
+  paypal.Buttons({
+    style: {
+      shape: 'pill',
+      color: 'white',
+      layout: 'vertical',
+      label: 'buynow',
+      
+    },
+
+    createOrder: function(data, actions) {
+      return actions.order.create({
+        purchase_units: [{"description":"Package of 4 30-minute voice lessons","amount":{"currency_code":"EUR","value":120}}]
+      });
+    },
+
+    onApprove: function(data, actions) {
+      return actions.order.capture().then(function(orderData) {
+
+        // Full available details
+        console.log('Capture result', orderData, JSON.stringify(orderData, null, 2));
+
+        // Show a success message within this page, e.g.
+        const element = document.getElementById('paypal-button-container');
+        element.innerHTML = '';
+        element.innerHTML = '<h3>Thank you for your payment!</h3>';
+
+        // Or go to another URL:  actions.redirect('thank_you.html');
+
+      });
+    },
+
+    onError: function(err) {
+      console.log(err);
+    }
+  }).render('#paypal-button-container');
+}
+initPayPalButton();
+
+</script>`,
+  euro240: `<div id="smart-button-container">
+<div style="text-align: center;">
+  <div id="paypal-button-container"></div>
+</div>
+</div>
+<script src="https://www.paypal.com/sdk/js?client-id=sb&enable-funding=venmo&currency=EUR" data-sdk-integration-source="button-factory"></script>
+<script>
+function initPayPalButton() {
+paypal.Buttons({
+  style: {
+    shape: 'pill',
+    color: 'white',
+    layout: 'vertical',
+    label: 'buynow',
+    
+  },
+
+  createOrder: function(data, actions) {
+    return actions.order.create({
+      purchase_units: [{"description":"Package of 4 one hour voice lessons","amount":{"currency_code":"EUR","value":240}}]
+    });
+  },
+
+  onApprove: function(data, actions) {
+    return actions.order.capture().then(function(orderData) {
+
+      // Full available details
+      console.log('Capture result', orderData, JSON.stringify(orderData, null, 2));
+
+      // Show a success message within this page, e.g.
+      const element = document.getElementById('paypal-button-container');
+      element.innerHTML = '';
+      element.innerHTML = '<h3>Thank you for your payment!</h3>';
+
+      // Or go to another URL:  actions.redirect('thank_you.html');
+
+    });
+  },
+
+  onError: function(err) {
+    console.log(err);
+  }
+}).render('#paypal-button-container');
+}
+initPayPalButton();
+
+</script>`,
+};
+
 const currency = document.querySelectorAll(".currency");
 const prices = document.querySelectorAll(".dynamic-price");
 
@@ -130,11 +333,6 @@ const price80 = document.querySelector(".buy-btn-80");
 const price120 = document.querySelector(".buy-btn-120");
 const price240 = document.querySelector(".buy-btn-240");
 
-const openPopup = function () {
-  overlay2.classList.add("overlay-open2");
-  paypalPopup.classList.add("popup-open");
-  html.classList.add("no-scroll");
-};
 const closePopup = function () {
   overlay2.classList.remove("overlay-open2");
   paypalPopup.classList.remove("popup-open");
@@ -142,7 +340,11 @@ const closePopup = function () {
 };
 
 buyBtns.forEach((button) => {
-  button.addEventListener("click", openPopup);
+  button.addEventListener("click", (e) => {
+    overlay2.classList.add("overlay-open2");
+    paypalPopup.classList.add("popup-open");
+    html.classList.add("no-scroll");
+  });
 });
 [overlay2, closeBtn].forEach((element) => {
   element.addEventListener("click", closePopup);
@@ -158,7 +360,7 @@ async function fetchLocation() {
 async function getCountry() {
   const userCountry = await fetchLocation();
 
-  if (userCountry === "IN") {
+  if (userCountry === "US") {
     currency.forEach((cur) => (cur.textContent = "$"));
   }
 }
