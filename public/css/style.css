@@ -544,7 +544,7 @@ PATREON SECTION
   background-color: var(--btn-pink);
   font-size: var(--font-size-p-primary);
   color: #fff;
-  padding: 1.1rem 2.2rem;
+  padding: 1.5rem 2.6rem;
   border-radius: 12px;
   font-weight: 500;
 }
@@ -1030,7 +1030,7 @@ CONTACTS SECTION
   margin-left: auto;
   margin-right: auto;
   display: table;
-  padding: 1rem 4.4rem;
+  padding: 1.4rem 8rem;
   border-radius: 6px;
   cursor: pointer;
   transition: all 0.1s ease-out;

@@ -268,7 +268,3 @@ const closePopup = function () {
 [overlay2, closeBtn].forEach((element) => {
   element.addEventListener("click", closePopup);
 });
-
-// checkoutEls.forEach((checkoutEl) => {
-//   checkoutEl.classList.add("usd");
-// });

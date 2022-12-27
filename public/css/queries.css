@@ -150,8 +150,11 @@ Making it a grid and removing the hover effect */
     background-color: #5865f2;
   }
   /* For making a zooming on hover effect */
-  body .socials-section .wrapper .button:hover {
+  body .socials-section .wrapper .button {
     transform: scale(1.1);
+  }
+  body .socials-section .wrapper .button:hover {
+    transform: scale(1.2);
   }
 
   .wrapper .button:nth-child(2):hover {
@@ -761,14 +764,15 @@ PATREON SECTION
   }
   .patreon-button {
     margin: 0;
-    padding: 1.3rem 4.4rem;
+    padding: 1.6rem 8rem;
+    font-size: 1.94rem;
   }
   .img-patreon {
     margin-bottom: 2.8rem;
     width: 14rem;
   }
   .patreon-text {
-    margin-bottom: 3.2rem;
+    margin-bottom: 5rem;
   }
   .socials-section {
     padding-bottom: 6.4rem;
@@ -929,9 +933,11 @@ PATREON SECTION
   .box-pricing {
     height: auto;
     width: 45rem;
+    padding-bottom: 4rem !important;
   }
   .item-description {
-    margin-bottom: 5.4rem;
+    margin-bottom: 7rem;
+    font-size: 1.915rem;
   }
   .price {
     font-size: 5rem;
@@ -939,12 +945,24 @@ PATREON SECTION
   .item-name {
     font-size: 2.4rem;
   }
+  .buy-btn {
+    padding: 1.9rem;
+    font-size: 2rem;
+  }
+  .plan-btn {
+    line-height: 1.5;
+  }
+  .contact-box textarea,
+  .contact-box input {
+    font-size: 1.9rem;
+  }
+  .contact-box button {
+    padding: 1.4rem 10rem;
+    margin-top: 4rem;
+  }
 }
 
 @media (max-width: 26.375em) {
-  .item-description {
-    font-size: 1.8rem;
-  }
   .pricing-h2 {
     text-align: start;
     padding-left: 2%;
