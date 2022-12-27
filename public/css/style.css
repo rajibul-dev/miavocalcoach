@@ -950,7 +950,7 @@ CONTACTS SECTION
   background-color: #f3f0ff;
   padding: 8rem 0;
   padding-bottom: 9.6rem;
-  font-family: "Inter", sans-serif;
+  letter-spacing: normal;
 }
 
 .contacts-container {
@@ -961,7 +961,6 @@ CONTACTS SECTION
 
 .contact-box {
   background-color: #ffd8ec;
-  /* box-shadow: 0 3px 14px rgba(0, 0, 0, 0.2); */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   border-radius: 6px;
   padding: 5rem;
@@ -998,7 +997,6 @@ CONTACTS SECTION
 .contact-box textarea,
 .contact-box input {
   font: inherit;
-  font-size: 1.915;
   background-color: #fff5fa;
   border: none;
   padding: 0.6rem 1.2rem;
@@ -1023,10 +1021,6 @@ CONTACTS SECTION
   max-height: 850px;
 }
 
-/* textarea::-webkit-scrollbar {
-  width: 0px;
-} */
-
 .contact-box button {
   background-color: var(--btn-pink);
   color: #fff;
@@ -1040,7 +1034,6 @@ CONTACTS SECTION
   border-radius: 6px;
   cursor: pointer;
   transition: all 0.1s ease-out;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
 }
 
 .contact-box button:hover {
