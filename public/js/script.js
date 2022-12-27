@@ -21,15 +21,20 @@ const mobileNavIn = document.querySelector(".nav-icon-inside");
 const overlay = document.querySelector(".overlay");
 const html = document.querySelector("html");
 
-function openCloseNav() {
-  mobileNavContainer.classList.toggle("mobile-nav-open");
-  overlay.classList.toggle("overlay-open");
-  html.classList.toggle("no-scroll");
+function openNav() {
+  mobileNavContainer.classList.add("mobile-nav-open");
+  overlay.classList.add("overlay-open");
+  html.classList.add("no-scroll");
+}
+function closeNav() {
+  mobileNavContainer.classList.remove("mobile-nav-open");
+  overlay.classList.remove("overlay-open");
+  html.classList.remove("no-scroll");
 }
 
-mobileNavBtnOut.addEventListener("click", openCloseNav);
-overlay.addEventListener("click", openCloseNav);
-mobileNavIn.addEventListener("click", openCloseNav);
+mobileNavBtnOut.addEventListener("click", openNav);
+overlay.addEventListener("click", closeNav);
+mobileNavIn.addEventListener("click", closeNav);
 
 //////////////////////////////////////
 // Navigation Smooth scrolling
