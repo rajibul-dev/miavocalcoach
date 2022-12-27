@@ -131,6 +131,11 @@ nonFirstallNavLinks.forEach((link) => {
 // Implementing US prices
 // HANDLING PAYMENTS WITH PAYPAL
 //////////////////////////////////////
+let euroScript = document.querySelector("#paypal-script");
+let usScript = document.createElement("script");
+usScript.src =
+  "https://www.paypal.com/sdk/js?client-id=AWlVsjH3FBAgYWGVKCzU_voA0e27xMcOTEqoGnU2967MUU_o1aiSpRWzBYIYRmdGW651kNba9Fwwxvq6&components=buttons&currency=USD";
+
 const currency = document.querySelectorAll(".currency");
 const prices = document.querySelectorAll(".dynamic-price");
 const buyBtns = document.querySelectorAll(".buy-btn");
@@ -162,13 +167,16 @@ async function getCountry() {
 
   if (userCountry === "US") {
     currency.forEach((cur) => (cur.textContent = "$"));
-    checkoutEls.forEach((checkoutEl) => {
-      checkoutEl.classList.add("usd");
-    });
-  } else {
-    checkoutEls.forEach((checkoutEl) => {
-      checkoutEl.classList.remove("usd");
-    });
+    euroScript.src =
+      "https://www.paypal.com/sdk/js?client-id=AWlVsjH3FBAgYWGVKCzU_voA0e27xMcOTEqoGnU2967MUU_o1aiSpRWzBYIYRmdGW651kNba9Fwwxvq6&components=buttons&currency=USD";
+
+    for (let i = 1; i <= 8; i++) {
+      createPayPalButton(`paypal-button-${i}`);
+    }
+    for (let i = 1; i <= 8; i++) {
+      document.getElementById(`paypal-button-${i}`).firstChild.style.display =
+        "none";
+    }
   }
 }
 getCountry();
@@ -260,3 +268,7 @@ const closePopup = function () {
 [overlay2, closeBtn].forEach((element) => {
   element.addEventListener("click", closePopup);
 });
+
+// checkoutEls.forEach((checkoutEl) => {
+//   checkoutEl.classList.add("usd");
+// });

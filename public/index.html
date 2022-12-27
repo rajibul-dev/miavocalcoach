@@ -43,8 +43,7 @@
     <script src="js/script.js" defer></script>
     <script src="https://unpkg.com/axios/dist/axios.min.js" defer></script>
     <!-- Include the PayPal JavaScript library -->
-    <script src="https://www.paypal.com/sdk/js?client-id=AfQzFcJRuVnyWoSf2XOFXJVFr_YmOa0CGs764nU33-V8ZVhnidAyvT67yz6TR86H9PXFAeLrbeu-1pPl&components=buttons"></script>
-
+    <script id="paypal-script" src="https://www.paypal.com/sdk/js?client-id=AWlVsjH3FBAgYWGVKCzU_voA0e27xMcOTEqoGnU2967MUU_o1aiSpRWzBYIYRmdGW651kNba9Fwwxvq6&components=buttons&currency=EUR"></script>
 
     <script
       defer
@@ -192,7 +191,10 @@
 
     </div>
 
+    
+
     <script>
+      
       function createPayPalButton(containerId) {
         paypal.Buttons({
           style: {
@@ -208,8 +210,8 @@
               purchase_units: [{
                 amount: {
                   value: document.getElementById(containerId).getAttribute('data-amount'),
-                  currency: document.getElementById(containerId).getAttribute('data-currency')
                 },
+                secret: 'EA0xL-MkKok2t5hU4m1gRRcEVN3qc3g-ZcBmFV1z_jDP8lFKaR3jQ_VuZ9DVFnOPdVXXLf9qjsKJvh52',
                 description: document.getElementById(containerId).getAttribute('data-description'),              
               }]
             });
