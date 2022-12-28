@@ -19,6 +19,7 @@
   "homepage": "https://github.com/rajidevteam/miavocalcoach-website#readme",
   "dependencies": {
     "axios": "^1.2.1",
+    "eslint": "^8.30.0",
     "ip": "^1.1.8",
     "nodemon": "^2.0.20",
     "zoid": "^9.0.86"

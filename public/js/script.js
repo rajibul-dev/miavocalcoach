@@ -110,6 +110,11 @@ nonFirstallNavLinks.forEach((link) => {
           top: offsetPosition - 11,
           behavior: "smooth",
         });
+      } else if (href2 === "#contact") {
+        window.scrollTo({
+          top: offsetPosition + 24,
+          behavior: "smooth",
+        });
       } else {
         window.scrollTo({
           top: offsetPosition,
