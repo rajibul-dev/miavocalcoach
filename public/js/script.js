@@ -160,31 +160,32 @@ const usd80El = document.querySelector(".usd80");
 const usd120El = document.querySelector(".usd120");
 const usd240El = document.querySelector(".usd240");
 
-async function fetchLocation() {
-  let url = "https://ipinfo.io/json?token=3e985ec775d67c";
-  let response = await fetch(url);
-  let data = await response.json();
-  return data.country;
-}
+// For enabling USD for US people:
+// async function fetchLocation() {
+//   let url = "https://ipinfo.io/json?token=3e985ec775d67c";
+//   let response = await fetch(url);
+//   let data = await response.json();
+//   return data.country;
+// }
 
-async function getCountry() {
-  const userCountry = await fetchLocation();
+// async function getCountry() {
+//   const userCountry = await fetchLocation();
 
-  if (userCountry === "US") {
-    currency.forEach((cur) => (cur.textContent = "$"));
-    euroScript.src =
-      "https://www.paypal.com/sdk/js?client-id=AWlVsjH3FBAgYWGVKCzU_voA0e27xMcOTEqoGnU2967MUU_o1aiSpRWzBYIYRmdGW651kNba9Fwwxvq6&components=buttons&currency=USD";
+//   if (userCountry === "US") {
+//     currency.forEach((cur) => (cur.textContent = "$"));
+//     euroScript.src =
+//       "https://www.paypal.com/sdk/js?client-id=AWlVsjH3FBAgYWGVKCzU_voA0e27xMcOTEqoGnU2967MUU_o1aiSpRWzBYIYRmdGW651kNba9Fwwxvq6&components=buttons&currency=USD";
 
-    for (let i = 1; i <= 8; i++) {
-      createPayPalButton(`paypal-button-${i}`);
-    }
-    for (let i = 1; i <= 8; i++) {
-      document.getElementById(`paypal-button-${i}`).firstChild.style.display =
-        "none";
-    }
-  }
-}
-getCountry();
+//     for (let i = 1; i <= 8; i++) {
+//       createPayPalButton(`paypal-button-${i}`);
+//     }
+//     for (let i = 1; i <= 8; i++) {
+//       document.getElementById(`paypal-button-${i}`).firstChild.style.display =
+//         "none";
+//     }
+//   }
+// }
+// getCountry();
 
 buyBtns.forEach((button) => {
   button.addEventListener("click", (e) => {
