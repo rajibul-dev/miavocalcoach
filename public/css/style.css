@@ -831,8 +831,8 @@ PRICING SECTION
 .grid-pricing {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  row-gap: 3rem;
-  column-gap: 3rem;
+  row-gap: 4rem;
+  column-gap: 4rem;
   justify-content: center;
   width: 71%;
   margin: 0 auto;
@@ -840,12 +840,14 @@ PRICING SECTION
 .box-pricing {
   background-color: #fff;
   height: 45rem;
-  width: 40rem;
+  width: 44rem;
   margin: 0 auto;
   padding: 4rem;
   padding-top: 6rem;
   border-radius: 6px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+  overflow: hidden;
 }
 .flex-price {
   display: flex;
@@ -910,6 +912,15 @@ PRICING SECTION
   font-weight: 700;
   font-size: 1.4rem;
   padding: 0.4rem 1rem;
+
+  background-color: rgb(162, 182, 255);
+  transform: rotate(45deg);
+  top: 8.5%;
+  left: 56%;
+  transform: rotate(30deg);
+  top: 6.5%;
+  left: 51%;
+  padding: 0.8rem 8rem;
 }
 
 /* ////////////////////
