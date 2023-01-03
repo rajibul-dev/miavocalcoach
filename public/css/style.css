@@ -902,21 +902,11 @@ PRICING SECTION
 }
 .rec-tag {
   position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-
   text-transform: uppercase;
-  background-color: #475fdd;
   color: #fff;
   font-weight: 700;
   font-size: 1.4rem;
-  padding: 0.4rem 1rem;
-
   background-color: rgb(162, 182, 255);
-  transform: rotate(45deg);
-  top: 8.5%;
-  left: 56%;
   transform: rotate(30deg);
   top: 6.5%;
   left: 51%;
