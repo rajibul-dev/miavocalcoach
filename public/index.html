@@ -221,14 +221,19 @@
             return actions.order.capture().then(function(details) {
               alert('Transaction completed by ' + details.payer.name.given_name);
             });
+          },
+          onClick: () => {
+            overlay2.classList.remove("overlay-open2");
+            paypalPopup.classList.remove("popup-open");
+            html.classList.remove("no-scroll");
+            checkoutEls.forEach((el) => el.classList.remove("show-checkout"));
           }
-
-        }).render(`#${containerId}`);
+        }
+        ).render(`#${containerId}`);
       }
       for (let i = 1; i <= 8; i++) {
         createPayPalButton(`paypal-button-${i}`);
       }
-
     </script>
 
     <nav class="mobile-nav-container">
