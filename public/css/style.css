@@ -874,8 +874,9 @@ PRICING SECTION
 .buy-btn {
   text-align: center;
 }
-.item-description {
-  color: #000;
+.item-description,
+.item-description strong {
+  color: var(--secondary-gray);
   line-height: 1.5;
   margin-bottom: auto;
   font-size: 1.7rem;
