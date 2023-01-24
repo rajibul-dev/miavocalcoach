@@ -924,6 +924,12 @@ PATREON SECTION
 
 /* NEW PRICING SECTION QUERIES */
 
+@media (min-width: 48.375em) {
+  .box-pricing:nth-child(3),
+  .box-pricing:nth-child(4) {
+    height: 43rem;
+  }
+}
 @media (max-width: 48.375em) {
   .grid-pricing {
     width: 100%;
