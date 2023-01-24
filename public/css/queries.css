@@ -931,7 +931,7 @@ PATREON SECTION
     row-gap: 4.8rem;
   }
   .popup-open {
-    transform: translate(-50%, -52%);
+    transform: translate(-50%, -50%);
   }
   .rec-tag {
     top: 6%;
