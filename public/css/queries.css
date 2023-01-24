@@ -930,6 +930,9 @@ PATREON SECTION
     grid-template-columns: 1fr;
     row-gap: 4.8rem;
   }
+  .popup-open {
+    transform: translate(-50%, -52%);
+  }
   .rec-tag {
     top: 6%;
     left: 55%;
