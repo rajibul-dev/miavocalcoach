@@ -1228,7 +1228,7 @@ PAYMENT POPUP
   opacity: 1;
   pointer-events: auto;
   visibility: visible;
-  transform: translate(-50%, -60%);
+  transform: translate(-50%, -55%);
 }
 
 .popup-header {
