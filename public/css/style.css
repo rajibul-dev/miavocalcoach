@@ -604,7 +604,7 @@ OBJECTIVE SECTION
 .feature-box {
   display: flex;
   flex-direction: column;
-  gap: 2.4rem;
+  gap: 2rem;
 }
 
 .feature-text {
@@ -621,7 +621,7 @@ strong {
 
 .yourserver-img {
   width: 25%;
-  align-self: flex-end;
+  /* align-self: flex-end; */
 }
 
 /* ////////////////////
@@ -715,6 +715,7 @@ PLANS SECTION
   width: 100%;
   display: block;
   padding: 1.4rem;
+  line-height: 1.3;
   border-radius: 14px;
   text-align: center;
   transition: all 0.1s ease-in;
@@ -1275,4 +1276,22 @@ PAYMENT POPUP
   .payment-popup {
     width: 85%;
   }
+}
+
+/* New stuff */
+.small-pink {
+  font-size: 1.5rem;
+  color: #c4265d;
+  text-transform: uppercase;
+  letter-spacing: 1.4pt;
+  margin-bottom: 1.2rem;
+  font-weight: 900;
+}
+.heading-atr {
+  font-weight: 700;
+  font-size: var(--font-size-secondary-heading);
+  line-height: 1.3;
+}
+.heading-new {
+  margin-bottom: 2.4rem;
 }
