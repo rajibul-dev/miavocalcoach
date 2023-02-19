@@ -490,6 +490,7 @@ PLANS SECTION
   .free-btn.plan-btn,
   .paid-btn.plan-btn {
     margin-top: 3.2rem;
+    padding: 1.7rem;
   }
   .plan-box {
     padding-bottom: 6.4rem;
