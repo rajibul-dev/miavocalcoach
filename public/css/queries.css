@@ -928,7 +928,12 @@ PATREON SECTION
 @media (min-width: 48.375em) {
   .box-pricing:nth-child(3),
   .box-pricing:nth-child(4) {
-    height: 43rem;
+    height: 45.2rem;
+    padding-top: 7.2rem;
+  }
+  .box-pricing:nth-child(3) .item-description,
+  .box-pricing:nth-child(4) .item-description {
+    line-height: 1.55;
   }
 }
 @media (max-width: 48.375em) {
@@ -940,22 +945,36 @@ PATREON SECTION
   .popup-open {
     transform: translate(-50%, -50%);
   }
-  .rec-tag {
+  /* .rec-tag {
     top: 6%;
     left: 55%;
-  }
+  } */
   .box-pricing {
     height: auto;
     width: 47rem;
     padding-bottom: 4rem !important;
     padding-top: 7rem;
   }
-  .item-description {
-    margin-bottom: 7rem;
+  .box-pricing:nth-child(4) {
+    padding-top: 9.3rem;
+  }
+  .rec-tag {
     font-size: 1.915rem;
+    line-height: 1.23;
+    padding: 0.8rem 2.4rem;
+  }
+  .item-description {
+    margin-bottom: 8rem;
+    font-size: 1.915rem;
+    line-height: 1.6;
+  }
+  .contact-box button {
+    margin-left: 0.04rem;
+    padding: 1.2rem 5rem !important;
+    margin-top: 3rem !important;
   }
   .price {
-    font-size: 5rem;
+    font-size: 5.5rem;
   }
   .item-name {
     font-size: 2.4rem;
@@ -997,7 +1016,7 @@ PATREON SECTION
 }
 
 /* Recommended tag adjustment */
-@media (max-width: 25.375em) {
+/* @media (max-width: 25.375em) {
   .rec-tag {
     top: 6.5%;
     left: 51%;
@@ -1019,5 +1038,11 @@ PATREON SECTION
   .rec-tag {
     top: 7%;
     left: 42%;
+  }
+} */
+@media (max-width: 24.0625em) {
+  .box-pricing {
+    padding-left: 1.2rem;
+    padding-right: 1.2rem;
   }
 }

@@ -945,12 +945,20 @@ PRICING SECTION
   text-transform: uppercase;
   color: #fff;
   font-weight: 700;
-  font-size: 1.4rem;
-  background-color: rgb(162, 182, 255);
-  transform: rotate(30deg);
-  top: 6.5%;
-  left: 51%;
-  padding: 0.8rem 8rem;
+  font-size: var(--font-size-p-primary);
+  letter-spacing: 0.5pt;
+  background-color: hsl(227, 100%, 70%);
+  background-color: var(--btn-pink-new);
+
+  /* transform: rotate(30deg); */
+  /* top: 6.5%; */
+  /* left: 51%; */
+
+  /* NEW */
+  left: 50%;
+  top: 0;
+  padding: 0.8rem 2rem;
+  transform: translateX(-50%);
 }
 
 /* ////////////////////
@@ -1336,4 +1344,12 @@ PAYMENT POPUP
 
 .about-text-inside-margin {
   display: block;
+}
+
+.seo-purpose-h1 {
+  position: absolute;
+  left: -10000px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
 }
