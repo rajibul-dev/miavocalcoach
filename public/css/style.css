@@ -367,14 +367,11 @@ SOCIAL COMPONENT
   background-color: #ff0000;
 }
 .wrapper .button:nth-child(4) .icon-box {
-  background-color: #262626;
+  background-color: #fb3c6c;
 }
 /* .wrapper .button:nth-child(5) .icon-box {
   background-color: #f95462;
 } */
-.wrapper .button:nth-child(5) .icon-box {
-  background-color: #fb3c6c;
-}
 
 /* hover */
 .wrapper .button:nth-child(1):hover {
@@ -390,14 +387,11 @@ SOCIAL COMPONENT
   background-color: #ff0000;
 }
 .wrapper .button:nth-child(4):hover {
-  background-color: #262626;
+  background-color: #fb3c6c;
 }
 /* .wrapper .button:nth-child(5):hover {
   background-color: #f95462;
 } */
-.wrapper .button:nth-child(5):hover {
-  background-color: #fb3c6c;
-}
 
 /* To make some buttons bigger */
 
@@ -457,14 +451,11 @@ SOCIAL COMPONENT
   width: 39rem;
 }
 .wrapper .button:nth-child(4):hover {
-  width: 38.7rem;
+  width: 29.3rem;
 }
 /* .wrapper .button:nth-child(5):hover {
   width: 36.8rem;
 } */
-.wrapper .button:nth-child(5):hover {
-  width: 29.3rem;
-}
 
 /* Is this possible? 82.5rem*/
 
