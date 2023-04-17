@@ -259,8 +259,8 @@ Making it a grid and removing the hover effect */
 
 @media (max-width: 24.875em) {
   html body .socials-section .wrapper {
-    transform: scale(0.9);
-    gap: 3rem;
+    transform: scale(1.07);
+    gap: 3.4rem;
   }
 }
 
@@ -765,7 +765,7 @@ PATREON SECTION
   }
   .patreon-button {
     margin: 0;
-    padding: 1.6rem 8rem;
+    padding: 2rem 8rem;
     font-size: 1.94rem;
   }
   .img-patreon {
@@ -1005,6 +1005,9 @@ PATREON SECTION
     width: 100%;
     padding-left: 2.5rem;
     padding-right: 2.5rem;
+  }
+  .margin-modify {
+    margin-bottom: 2.6rem;
   }
 }
 
