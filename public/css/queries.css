@@ -177,6 +177,9 @@ Making it a grid and removing the hover effect */
   .about-container {
     padding: 0 8%;
   }
+  html body .socials-section .wrapper {
+    gap: 3rem;
+  }
 }
 
 /* Flex container padding */
@@ -259,7 +262,7 @@ Making it a grid and removing the hover effect */
 
 @media (max-width: 24.875em) {
   html body .socials-section .wrapper {
-    transform: scale(1.07);
+    transform: scale(1);
     gap: 3.4rem;
   }
 }
@@ -776,6 +779,7 @@ PATREON SECTION
     margin-bottom: 5rem;
   }
   .socials-section {
+    padding-top: 7rem;
     padding-bottom: 6.4rem;
   }
   .patreon-section {
@@ -1047,5 +1051,11 @@ PATREON SECTION
   .box-pricing {
     padding-left: 1.2rem;
     padding-right: 1.2rem;
+  }
+}
+@media (max-width: 21.375em) {
+  html body .socials-section .wrapper {
+    gap: 3.4rem;
+    transform: scale(0.94);
   }
 }
