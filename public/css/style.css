@@ -1090,9 +1090,9 @@ TESTIMONIALS SECTION
 }
 
 .testimonials-container {
-  max-width: 120rem;
+  max-width: 145rem;
   margin: 0 auto;
-  padding: 0 8%;
+  padding: 0 5%;
 }
 
 .testimonials-heading {
@@ -1122,6 +1122,8 @@ TESTIMONIALS SECTION
 .grid-testimonials {
   display: grid;
   gap: 4.8rem;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: stretch;
 }
 
 .message-box {
@@ -1129,7 +1131,7 @@ TESTIMONIALS SECTION
   gap: 1.6rem;
   flex-direction: column;
   padding: 3rem 6.5rem;
-
+  /* max-width: 80ch; */
   background-color: #ffedf5;
   box-shadow: 1rem 1rem 0 #e649804c;
   border-radius: 10px;

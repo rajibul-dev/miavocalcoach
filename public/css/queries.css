@@ -1059,3 +1059,18 @@ PATREON SECTION
     transform: scale(0.94);
   }
 }
+
+@media (max-width: 48.75em) {
+  .testimonials-container {
+    max-width: 120rem;
+    padding: 0 8%;
+  }
+
+  .grid-testimonials {
+    grid-template-columns: 1fr;
+  }
+  .message-box {
+    max-width: 100ch;
+    margin-inline: auto;
+  }
+}
