@@ -1004,14 +1004,14 @@ CONTACTS SECTION
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   border-radius: 6px;
   padding: 5rem;
-  max-width: 55rem;
+  max-width: 74rem;
   margin: 0 auto;
 }
 
 .contact-box h2 {
   font-weight: 500;
   font-size: var(--font-size-secondary-heading);
-  margin-bottom: 5.2rem;
+  margin-bottom: 4.6rem;
 }
 
 .contact-box form {
@@ -1019,9 +1019,17 @@ CONTACTS SECTION
 }
 
 .form-flex {
-  display: flex;
-  flex-direction: column;
-  gap: 2.2rem;
+  display: grid;
+  grid-template-columns: 1fr 1.6fr;
+  column-gap: 4rem;
+  row-gap: 2.4rem;
+}
+
+.form-subject {
+  grid-column: span 2;
+}
+.form-message {
+  grid-column: span 2;
 }
 
 .form-pair {
@@ -1131,7 +1139,6 @@ TESTIMONIALS SECTION
   gap: 1.6rem;
   flex-direction: column;
   padding: 3rem 6.5rem;
-  /* max-width: 80ch; */
   background-color: #ffedf5;
   box-shadow: 1rem 1rem 0 #e649804c;
   border-radius: 10px;
