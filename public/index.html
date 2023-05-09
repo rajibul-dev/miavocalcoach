@@ -134,13 +134,27 @@
 
       </div>
 
+      <div class="dynamic-checkout eur110">
+
+        <h3 class="pop-up-price"><span class="currency">€</span>110</h3>
+        <p class="pop-up-item-name">Singular 2-hour voice lesson</p>
+
+        <div
+          id="paypal-button-3"
+          data-amount="110"
+          data-currency="EUR"
+          data-description="Singular 2-hour voice lesson"          
+        ></div>
+
+      </div>
+
       <div class="dynamic-checkout eur120">
 
         <h3 class="pop-up-price"><span class="currency">€</span>120</h3>
         <p class="pop-up-item-name">Package of 4 30-minute voice lessons</p>
 
         <div
-          id="paypal-button-3"
+          id="paypal-button-4"
           data-amount="120"
           data-currency="EUR"
           data-description="Package of 4 30-minute voice lessons"          
@@ -154,7 +168,7 @@
         <p class="pop-up-item-name">Package of 4 one hour voice lessons</p>
 
         <div
-          id="paypal-button-4"
+          id="paypal-button-5"
           data-amount="240"
           data-currency="EUR"
           data-description="Package of 4 one hour voice lessons"          
@@ -162,13 +176,28 @@
 
       </div>
 
+      <div class="dynamic-checkout eur440">
+
+        <h3 class="pop-up-price"><span class="currency">€</span>440</h3>
+        <p class="pop-up-item-name">Package of 4 two-hour voice lessons</p>
+
+        <div
+          id="paypal-button-6"
+          data-amount="440"
+          data-currency="EUR"
+          data-description="Package of 4 two hour voice lessons"          
+         ></div>
+
+      </div>
+
+      <!-- USD -->
       <div class="dynamic-checkout usd40">
 
         <h3 class="pop-up-price"><span class="currency">€</span>40</h3>
         <p class="pop-up-item-name">Singular 30-minute voice lesson</p>
 
         <div
-          id="paypal-button-5"
+          id="paypal-button-7"
           data-amount="40"
           data-currency="USD"
           data-description="Singular 30-minute voice lesson"          
@@ -182,10 +211,24 @@
         <p class="pop-up-item-name">Singular 1 hour voice lesson</p>
 
         <div
-          id="paypal-button-6"
+          id="paypal-button-8"
           data-amount="80"
           data-currency="USD"
           data-description="Singular 1 hour voice lesson"          
+         ></div>
+
+      </div>
+
+      <div class="dynamic-checkout usd110">
+
+        <h3 class="pop-up-price"><span class="currency">€</span>110</h3>
+        <p class="pop-up-item-name">Singular 2-hour voice lesson</p>
+
+        <div
+          id="paypal-button-9"
+          data-amount="110"
+          data-currency="USD"
+          data-description="Singular 2-hour voice lesson"          
          ></div>
 
       </div>
@@ -196,7 +239,7 @@
         <p class="pop-up-item-name">Package of 4 30-minute voice lessons</p>
 
         <div
-          id="paypal-button-7"
+          id="paypal-button-10"
           data-amount="120"
           data-currency="USD"
           data-description="Package of 4 30-minute voice lessons"          
@@ -210,10 +253,24 @@
         <p class="pop-up-item-name">Package of 4 one hour voice lessons</p>
 
         <div
-          id="paypal-button-8"
+          id="paypal-button-11"
           data-amount="240"
           data-currency="USD"
           data-description="Package of 4 one hour voice lessons"          
+       ></div>
+
+      </div>
+
+      <div class="dynamic-checkout usd440">
+
+        <h3 class="pop-up-price"><span class="currency">€</span>440</h3>
+        <p class="pop-up-item-name">Package of 4 two-hour voice lessons</p>
+
+        <div
+          id="paypal-button-12"
+          data-amount="440"
+          data-currency="USD"
+          data-description="Package of 4 two-hour voice lessons"          
        ></div>
 
       </div>
@@ -260,7 +317,7 @@
         }
         ).render(`#${containerId}`);
       }
-      for (let i = 1; i <= 8; i++) {
+      for (let i = 1; i <= 12; i++) {
         createPayPalButton(`paypal-button-${i}`);
       }
     </script>
@@ -565,6 +622,20 @@
           <!-- 3rd pricing box -->
           <div class="box-pricing">
             <div class="flex-price">
+              <span class="price"><span class="currency">€</span>110</span>
+              <span class="item-name">Singular 2-hour<br/>voice lesson</span>
+              <p class="item-description">
+                We get more time and thus we can do more
+              </p>
+              <a type="button" href="javascript:;" class="buy-btn buy-btn-110">
+                Buy now
+              </a>
+            </div>
+          </div>
+
+          <!-- 4th pricing box -->
+          <div class="box-pricing">
+            <div class="flex-price">
               <span class="price"><span class="currency">€</span>120</span>
               <span class="item-name">Package of 4 30-minute<br/>voice lessons</span>
               <p class="item-description">
@@ -577,7 +648,7 @@
             </div>
           </div>
 
-          <!-- 4th pricing box -->
+          <!-- 5th pricing box -->
           <div class="box-pricing rec-tag-container">
             <span class="rec-tag">recommended</span>
             <div class="flex-price">
@@ -592,6 +663,21 @@
               </a>
             </div>
           </div>
+
+          <!-- 6th pricing box -->
+          <div class="box-pricing">
+          <div class="flex-price">
+            <span class="price"><span class="currency">€</span>440</span>
+            <span class="item-name">Package of 4 two-hour<br/>voice lessons</span>
+            <p class="item-description">
+              4 Lessons for the price of 3!<br/>
+              <s><span class="currency">€</span>480</s> <strong><span class="currency">€</span>440</strong> (<span class="currency">€</span>55 on average per lesson)
+            </p>
+            <a type="button" href="javascript:;" class="buy-btn buy-btn-440">
+              Buy now
+            </a>
+          </div>
+        </div>
 
         </div>
       </div>

@@ -152,13 +152,17 @@ const closeBtn = document.querySelector(".close-btn");
 
 const eur40El = document.querySelector(".eur40");
 const eur80El = document.querySelector(".eur80");
+const eur110El = document.querySelector(".eur110");
 const eur120El = document.querySelector(".eur120");
 const eur240El = document.querySelector(".eur240");
+const eur440El = document.querySelector(".eur440");
 
 const usd40El = document.querySelector(".usd40");
 const usd80El = document.querySelector(".usd80");
+const usd110El = document.querySelector(".usd110");
 const usd120El = document.querySelector(".usd120");
 const usd240El = document.querySelector(".usd240");
+const usd440El = document.querySelector(".usd440");
 
 // For enabling USD for US people:
 // async function fetchLocation() {
@@ -214,6 +218,16 @@ buyBtns.forEach((button) => {
         codeExecuted = true;
       }
 
+      // $110
+      else if (
+        !codeExecuted &&
+        button.classList.contains("buy-btn-110") &&
+        checkoutEl.classList.contains("usd")
+      ) {
+        usd110El.classList.add("show-checkout");
+        codeExecuted = true;
+      }
+
       // $120
       else if (
         !codeExecuted &&
@@ -234,6 +248,16 @@ buyBtns.forEach((button) => {
         codeExecuted = true;
       }
 
+      // $440
+      else if (
+        !codeExecuted &&
+        button.classList.contains("buy-btn-440") &&
+        checkoutEl.classList.contains("usd")
+      ) {
+        usd440El.classList.add("show-checkout");
+        codeExecuted = true;
+      }
+
       // €40
       else if (!codeExecuted && button.classList.contains("buy-btn-40")) {
         eur40El.classList.add("show-checkout");
@@ -243,6 +267,12 @@ buyBtns.forEach((button) => {
       // €80
       else if (!codeExecuted && button.classList.contains("buy-btn-80")) {
         eur80El.classList.add("show-checkout");
+        codeExecuted = true;
+      }
+
+      // €110
+      else if (!codeExecuted && button.classList.contains("buy-btn-110")) {
+        eur110El.classList.add("show-checkout");
         codeExecuted = true;
       }
 
@@ -257,7 +287,14 @@ buyBtns.forEach((button) => {
         eur240El.classList.add("show-checkout");
         codeExecuted = true;
       }
+
+      // €440
+      else if (!codeExecuted && button.classList.contains("buy-btn-440")) {
+        eur440El.classList.add("show-checkout");
+        codeExecuted = true;
+      }
     });
+
     overlay2.classList.add("overlay-open2");
     paypalPopup.classList.add("popup-open");
     html.classList.add("no-scroll");
