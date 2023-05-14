@@ -1315,6 +1315,7 @@ PAYMENT POPUP
 .dynamic-checkout {
   padding: 4rem 3rem;
   display: none;
+  padding-bottom: 3rem;
 }
 .show-checkout {
   display: block;
