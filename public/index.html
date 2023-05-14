@@ -280,7 +280,6 @@
     
 
     <script>
-      
       function createPayPalButton(containerId) {
         paypal.Buttons({
           style: {
@@ -289,7 +288,7 @@
             shape: 'pill',
             color: 'white',
             label: 'buynow',
-            layout: 'horizontal',
+            layout: 'vertical',
             tagline: false
           },
           createOrder: function(data, actions) {          
@@ -308,12 +307,12 @@
               alert('Transaction completed by ' + details.payer.name.given_name);
             });
           },
-          onClick: () => {
+          onComplete: function(data, actions) {
             overlay2.classList.remove("overlay-open2");
             paypalPopup.classList.remove("popup-open");
             html.classList.remove("no-scroll");
             checkoutEls.forEach((el) => el.classList.remove("show-checkout"));
-          }
+          },
         }
         ).render(`#${containerId}`);
       }
