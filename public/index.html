@@ -306,13 +306,7 @@
             return actions.order.capture().then(function(details) {
               alert('Transaction completed by ' + details.payer.name.given_name);
             });
-          },
-          onComplete: function(data, actions) {
-            overlay2.classList.remove("overlay-open2");
-            paypalPopup.classList.remove("popup-open");
-            html.classList.remove("no-scroll");
-            checkoutEls.forEach((el) => el.classList.remove("show-checkout"));
-          },
+          }
         }
         ).render(`#${containerId}`);
       }
