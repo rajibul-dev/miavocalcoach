@@ -99,6 +99,10 @@ a {
   text-decoration: none;
 }
 
+::selection {
+  background-color: pink;
+}
+
 /* ////////////////////
 HEADER
 //////////////////// */
