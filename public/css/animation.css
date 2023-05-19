@@ -1,0 +1,40 @@
+@keyframes bottom-to-base {
+  0% {
+    opacity: 0;
+    transform: translateY(5%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes left-to-base {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes right-to-base {
+  0% {
+    opacity: 0;
+    transform: translateX(10%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.bottom-to-base {
+  animation: bottom-to-base 0.5s;
+}
+.left-to-base {
+  animation: left-to-base 0.5s;
+}
+.right-to-base {
+  animation: right-to-base 0.5s;
+}
