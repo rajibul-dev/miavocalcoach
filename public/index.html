@@ -680,20 +680,20 @@
               <div class="form-flex">
                 <div class="form-pair">                
                   <label for="name">Name</label>
-                <input  placeholder="John Titor" id="name" name="name" type="text" required/>
+                <input placeholder="John Titor" id="name" name="name" type="text" maxlength="100" required/>
               </div>
               <div class="form-pair">              
                 <label for="email">Email Address</label>
-                <input  placeholder="youremail@gmail.com" id="email" name="email" type="email" required/>
+                <input placeholder="youremail@gmail.com" id="email" name="email" type="email" maxlength="100" required/>
               </div>
               <div class="form-pair form-subject">     
                 <label for="subject">Subject (optional)</label>
-                <input  placeholder="Subject of the message" id="subject" name="subject" type="text"/>
+                <input placeholder="Subject of the message" id="subject" name="subject" maxlength="150" type="text"/>
               </div>
               
               <div class="form-pair form-message">
                 <label for="message">Message</label>
-                <textarea type="text" placeholder="Type your message here..." id="message" name="message" required></textarea>
+                <textarea type="text" placeholder="Type your message here..." id="message" name="message" maxlength="2000" required></textarea>
               </div>
             </div>
               <button type="submit">Submit</button>
