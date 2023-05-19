@@ -28,6 +28,16 @@
     transform: translateX(0);
   }
 }
+@keyframes fast-right-to-base {
+  0% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
 
 .bottom-to-base {
   animation: bottom-to-base 0.5s;
@@ -37,4 +47,7 @@
 }
 .right-to-base {
   animation: right-to-base 0.5s;
+}
+.fast-right-to-base {
+  animation: fast-right-to-base 0.5s;
 }
