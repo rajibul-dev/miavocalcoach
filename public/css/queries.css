@@ -633,7 +633,7 @@ CALENDLY SECTION
     box-shadow: none;
   }
   .calendly-heading {
-    margin-bottom: 0;
+    /* margin-bottom: 0; */
   }
   .contacts-section {
     /* padding-top: 3.2rem; */
@@ -646,7 +646,7 @@ CALENDLY SECTION
     width: 50rem;
   }
   .calendly-heading {
-    transform: translateY(-200%);
+    /* transform: translateY(-200%); */
   }
 }
 @media (max-width: 32.75em) {
@@ -656,13 +656,14 @@ CALENDLY SECTION
     width: 96%;
   }
   .calendly-heading {
-    transform: translateY(-120%);
+    /* transform: translateY(-120%); */
     text-align: start;
     padding-left: 2%;
   }
   .calendly-section {
-    padding: 6.4rem 0;
-    padding-bottom: 1.8rem;
+    padding-top: 6.4rem;
+    /* padding: 9rem 0; */
+    /* padding-bottom: 1.8rem; */
   }
   .plans-section {
     /* padding-bottom: 10rem; */
@@ -673,7 +674,7 @@ CALENDLY SECTION
 }
 @media (max-width: 27em) {
   .calendly-section {
-    padding-bottom: 4.8rem;
+    /* padding-bottom: 4.8rem; */
   }
   .contacts-section {
     /* padding-top: 4.8rem; */
