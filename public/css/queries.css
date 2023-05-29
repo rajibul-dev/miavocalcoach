@@ -464,16 +464,16 @@ PLANS SECTION
 
 @media (max-width: 51.125em) {
   .plan-box.free:hover {
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: none;
   }
 
   .plan-box.paid:hover {
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    box-shadow: none;
   }
   .plan-box.free:hover,
   .plan-box.paid:hover {
     /* transform: translateY(-2%); */
-    transform: scale(1);
+    /* transform: scale(1); */
   }
   .card-flex {
     flex-direction: column;
