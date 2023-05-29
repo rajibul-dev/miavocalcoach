@@ -632,8 +632,7 @@ PLANS SECTION
 .plans-section {
   background-color: #f3f0ff;
   color: var(--somewhat-different-gray);
-  padding-top: 8rem;
-  padding-bottom: 5rem;
+  padding: 8rem 0;
 }
 
 .plans-container {
@@ -652,7 +651,7 @@ PLANS SECTION
 }
 
 .more-margin {
-  margin-bottom: 7.2rem;
+  margin-bottom: 6.2rem;
   text-align: center;
   font-weight: 600;
   font-size: var(--font-size-secondary-heading);
@@ -820,8 +819,7 @@ PRICING SECTION
 //////////////////// */
 .section-pricing {
   background-color: #f3f0ff;
-  padding-top: 5rem;
-  padding-bottom: 12rem;
+  padding: 8rem 0;
 }
 .container-pricing {
   max-width: 130rem;
@@ -951,8 +949,7 @@ CALENDLY SECTION
 
 .calendly-section {
   background-color: #f3f0ff;
-  padding: 8.6rem 0;
-  padding-bottom: 10rem;
+  padding: 8rem 0;
 }
 
 .calendly-container {
@@ -963,12 +960,9 @@ CALENDLY SECTION
 
 .calendly-heading {
   text-align: center;
-  margin-bottom: 2rem;
-  transform: translateY(-240%);
 }
 
 .calendly-inline-widget {
-  transform: scale(1.3);
   width: 44rem;
   height: 49.1rem;
   margin: 0 auto;
