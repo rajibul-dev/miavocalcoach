@@ -44,7 +44,7 @@ mobileNavIn.addEventListener("click", closeNav);
 const toTop = document.querySelector(".btt");
 
 window.addEventListener("scroll", () => {
-  if (window.pageYOffset > 8000) {
+  if (window.pageYOffset > 8200) {
     toTop.classList.add("active");
   } else {
     toTop.classList.remove("active");
@@ -100,17 +100,7 @@ nonFirstallNavLinks.forEach((link) => {
       const offsetPosition =
         elementPosition + window.pageYOffset - headerOffset;
 
-      if (href2 === "#calendly") {
-        window.scrollTo({
-          top: offsetPosition - 44,
-          behavior: "smooth",
-        });
-      } else if (href2 === "#pricing") {
-        window.scrollTo({
-          top: offsetPosition - 11,
-          behavior: "smooth",
-        });
-      } else if (href2 === "#contact") {
+      if (href2 === "#contact") {
         window.scrollTo({
           top: offsetPosition + 24,
           behavior: "smooth",

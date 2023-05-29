@@ -1400,3 +1400,8 @@ PAYMENT POPUP
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
+@media screen and (max-width: 500px) {
+  .btt {
+    bottom: 8rem;
+  }
+}
