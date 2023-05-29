@@ -24,6 +24,10 @@ VARIABLES
   --secondary-gray: #2b2b2b;
   --somewhat-different-gray: #222121;
 
+  --dark-pink: #d6437e;
+  --dark-accent-color: #dcd4ff;
+  --dark-accent-fade-color: #c9c4e0;
+
   --btn-pink: #ee588c;
   --btn-pink-new: #e5748f;
   --btn-pink-new-hover-state: #d6627b;
@@ -630,9 +634,9 @@ PLANS SECTION
 //////////////////// */
 
 .plans-section {
-  background-color: #f3f0ff;
+  background-color: #fff;
   color: var(--somewhat-different-gray);
-  padding: 8rem 0;
+  padding: 9.6rem 0;
 }
 
 .plans-container {
@@ -665,7 +669,7 @@ PLANS SECTION
 .plan-box {
   background-color: #fff;
   padding: 4.8rem 4rem;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
   width: 50%;
   border-radius: 6px;
   transition: all 0.2s ease-out;
@@ -743,29 +747,31 @@ PLANS SECTION
 
 /* Paid */
 .paid {
-  background: rgb(94, 28, 201);
+  /* background: rgb(94, 28, 201);
   background: linear-gradient(
     146deg,
     rgba(94, 28, 201, 1) 0%,
     rgba(254, 90, 180, 1) 100%
-  );
+  ); */
+
+  background: #d6437e;
 
   /* In hex: #fe5ab4 #5e1cc9 */
 
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); */
 }
 
 .free:hover,
 .paid:hover {
-  transform: scale(1.02);
+  /* transform: scale(1.02); */
 }
 
 .free:hover {
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+  /* box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1); */
 }
 
 .paid:hover {
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
+  /* box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3); */
 }
 
 /* dark */
@@ -803,7 +809,7 @@ PLANS SECTION
   text-decoration: none;
   color: #fff;
   font-weight: 700;
-  background-color: #a2b6ff;
+  background-color: hwb(227 54% 0%);
   border-color: #a2b6ff;
 }
 
@@ -812,6 +818,13 @@ PLANS SECTION
   border-radius: 6px;
   padding: 1.5rem;
   line-height: 1.5;
+}
+.free {
+  border: 1px solid var(--somewhat-different-gray);
+  box-shadow: none;
+}
+.paid {
+  border: 1px solid var(--dark-pink);
 }
 
 /* ////////////////////
@@ -948,8 +961,8 @@ CALENDLY SECTION
 //////////////////// */
 
 .calendly-section {
-  background-color: #f3f0ff;
-  padding: 8rem 0;
+  background-color: var(--dark-accent-color);
+  padding: 9.6rem 0;
 }
 
 .calendly-container {
@@ -975,8 +988,7 @@ CONTACTS SECTION
 
 .contacts-section {
   background-color: #f3f0ff;
-  padding: 8rem 0;
-  padding-bottom: 9.6rem;
+  padding: 9.6rem 0;
   letter-spacing: normal;
 }
 

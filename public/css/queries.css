@@ -484,7 +484,7 @@ PLANS SECTION
     width: 80%;
   }
   #pricing {
-    padding-top: 4rem;
+    /* padding-top: 4rem; */
     /* padding-bottom: 10rem; */
   }
   .pricing-section {
@@ -499,10 +499,10 @@ PLANS SECTION
     padding-bottom: 6.4rem;
   }
   #lesson-options {
-    padding-bottom: 4.4rem;
+    /* padding-bottom: 4.4rem; */
   }
   #pricing {
-    padding-top: 4.4rem;
+    /* padding-top: 4.4rem; */
   }
 }
 
@@ -600,7 +600,7 @@ FIXING SPACES FOR SMALLER SCREEN DEVICES
 
 @media (max-width: 33.8em) {
   #pricing {
-    padding-bottom: 8rem;
+    /* padding-bottom: 8rem; */
   }
 }
 
@@ -636,7 +636,7 @@ CALENDLY SECTION
     margin-bottom: 0;
   }
   .contacts-section {
-    padding-top: 3.2rem;
+    /* padding-top: 3.2rem; */
   }
 }
 @media (max-width: 64em) {
@@ -665,10 +665,10 @@ CALENDLY SECTION
     padding-bottom: 1.8rem;
   }
   .plans-section {
-    padding-bottom: 10rem;
+    /* padding-bottom: 10rem; */
   }
   .contacts-section {
-    padding-top: 0;
+    /* padding-top: 0; */
   }
 }
 @media (max-width: 27em) {
@@ -676,7 +676,7 @@ CALENDLY SECTION
     padding-bottom: 4.8rem;
   }
   .contacts-section {
-    padding-top: 4.8rem;
+    /* padding-top: 4.8rem; */
   }
   .contact-box {
     padding-left: 2rem;
@@ -690,7 +690,7 @@ CALENDLY SECTION
 /* Minor adjustment */
 @media (max-width: 33em) {
   .plans-section {
-    padding-bottom: 8rem;
+    /* padding-bottom: 8rem; */
   }
 }
 
