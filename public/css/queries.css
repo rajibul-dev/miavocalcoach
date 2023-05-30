@@ -671,6 +671,10 @@ CALENDLY SECTION
   .contacts-section {
     /* padding-top: 0; */
   }
+  .schedule-btns a {
+    text-align: start;
+    padding-inline: 2rem;
+  }
 }
 @media (max-width: 27em) {
   .calendly-section {
