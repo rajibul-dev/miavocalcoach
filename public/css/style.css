@@ -991,6 +991,13 @@ CALENDLY SECTION
   background: #ffecba;
   gap: 1.4rem;
 }
+.info a {
+  color: var(--pink-text);
+}
+.info a:hover {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
 .info__icon {
 }
 .info__p {
