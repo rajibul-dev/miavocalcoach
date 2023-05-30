@@ -673,7 +673,7 @@ CALENDLY SECTION
   }
   .schedule-btns a {
     text-align: start;
-    padding-inline: 2rem;
+    padding-inline: 2.6rem;
   }
 }
 @media (max-width: 27em) {
