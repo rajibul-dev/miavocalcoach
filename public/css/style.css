@@ -1024,11 +1024,28 @@ CALENDLY SECTION
   line-height: 1.3;
   transition: all 0.15s;
 }
+.schedule__p {
+  line-height: 1.5;
+  margin-top: 1.2rem;
+  font-weight: 400;
+  font-size: var(--font-size-p-primary);
+  /* text-align: start; */
+  max-width: 35ch;
+  margin-inline: auto;
+  color: var(--secondary-gray);
+}
+.br-margin {
+  display: inline-block;
+  margin-bottom: 0.8rem;
+}
 .schedule-btns a:last-child {
   border-bottom: none;
 }
 .schedule-btns a:hover {
   background: var(--btn-pink);
+  color: #fff;
+}
+.schedule-btns a:hover .schedule__p {
   color: #fff;
 }
 
@@ -1419,3 +1436,14 @@ PAYMENT POPUP
     bottom: 8rem;
   }
 }
+
+/* For calendly embed to be big and not make the ui bad */
+/* .calendly-inline-widget {
+  transform: scale(1.2);
+  box-shadow: none;
+  position: relative;
+  top: 5.6rem;
+}
+.calendly-section {
+  padding-bottom: 22rem;
+} */
