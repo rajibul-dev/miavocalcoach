@@ -1025,7 +1025,7 @@ CALENDLY SECTION
   transition: all 0.15s;
 }
 .schedule__p {
-  line-height: 1.5;
+  line-height: 1.7;
   margin-top: 1.2rem;
   font-weight: 400;
   font-size: var(--font-size-p-primary);
