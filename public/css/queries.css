@@ -935,12 +935,11 @@ PATREON SECTION
 /* NEW PRICING SECTION QUERIES */
 
 @media (min-width: 48.375em) {
-  /* TODO: */
-  /* .box-pricing:nth-child(3),
+  .box-pricing:nth-child(3),
   .box-pricing:nth-child(4) {
     height: 45.2rem;
     padding-top: 7.2rem;
-  } */
+  }
   .box-pricing:nth-child(3) .item-description,
   .box-pricing:nth-child(4) .item-description {
     line-height: 1.55;
@@ -969,10 +968,9 @@ PATREON SECTION
     padding-bottom: 4rem !important;
     padding-top: 7rem;
   }
-  /* TODO: */
-  /* .box-pricing:nth-child(4) {
+  .box-pricing:nth-child(3) {
     padding-top: 9.3rem;
-  } */
+  }
   .rec-tag {
     font-size: 1.915rem;
     line-height: 1.23;
