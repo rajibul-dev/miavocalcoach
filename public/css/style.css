@@ -845,7 +845,7 @@ PRICING SECTION
 }
 .grid-pricing {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   row-gap: 4rem;
   column-gap: 4rem;
   justify-content: center;
@@ -863,21 +863,6 @@ PRICING SECTION
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 
   overflow: hidden;
-}
-@media (min-width: 82.375em) {
-  .box-pricing {
-    height: 45rem;
-    max-width: 40rem;
-  }
-}
-@media (max-width: 82.375em) {
-  .grid-pricing {
-    grid-template-columns: repeat(2, 1fr);
-  }
-  .box-pricing:nth-child(3) {
-    height: 46.7rem;
-    padding-top: 7.2rem;
-  }
 }
 .flex-price {
   display: flex;
