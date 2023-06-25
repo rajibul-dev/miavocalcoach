@@ -1429,8 +1429,12 @@ PAYMENT POPUP
 } */
 
 /* aligning with warning */
-/* @media screen and (max-width: 500px) { */
-.btt {
-  bottom: 1.8rem;
+@media screen and (max-width: 500px) {
+  .btt {
+    bottom: 1.8rem;
+  }
 }
-/* } */
+
+.btt {
+  bottom: 1rem;
+}
