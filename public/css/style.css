@@ -1427,3 +1427,10 @@ PAYMENT POPUP
 .calendly-section {
   padding-bottom: 22rem;
 } */
+
+/* aligning with warning */
+/* @media screen and (max-width: 500px) { */
+.btt {
+  bottom: 1.8rem;
+}
+/* } */
