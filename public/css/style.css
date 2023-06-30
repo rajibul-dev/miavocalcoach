@@ -978,6 +978,7 @@ CALENDLY SECTION
 }
 .info a {
   color: var(--pink-text);
+  font-weight: 600;
 }
 .info a:hover {
   text-decoration: underline;
@@ -1413,8 +1414,8 @@ PAYMENT POPUP
   bottom: 0;
   width: 100%;
   justify-content: center;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 /* For calendly embed to be big and not make the ui bad */
@@ -1429,12 +1430,55 @@ PAYMENT POPUP
 } */
 
 /* aligning with warning */
+
+.btt {
+  bottom: 6rem;
+}
+
+header .info__p {
+  max-width: 52ch;
+  line-height: 1.7;
+  /* font-weight: 500; */
+}
+
+.testimonials-section {
+  padding-bottom: 20rem;
+}
+
 @media screen and (max-width: 500px) {
   .btt {
-    bottom: 1.8rem;
+    bottom: 14rem;
+  }
+  .testimonials-section {
+    padding-bottom: 34rem;
+  }
+}
+@media screen and (max-width: 408px) {
+  .btt {
+    bottom: 16rem;
+  }
+  .testimonials-section {
+    padding-bottom: 35rem;
   }
 }
 
-.btt {
-  bottom: 1rem;
+.inline-btn {
+  background-color: var(--btn-pink);
+  color: #fff !important;
+  font-weight: 500 !important;
+  display: inline-block;
+  padding: 0 1.2rem;
+  border-radius: 6px;
+  transition: all 0.15s;
+}
+.inline-btn:hover {
+  text-decoration: none !important;
+  background-color: var(--pink-text);
+  transform: scale(1.5);
+  /* box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3); */
+}
+@media screen and (max-width: 500px) {
+  .inline-btn:hover {
+    transform: scale(1);
+  }
 }
