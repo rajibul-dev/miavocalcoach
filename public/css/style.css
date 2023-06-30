@@ -984,10 +984,10 @@ CALENDLY SECTION
   text-decoration: underline;
   text-underline-offset: 3px;
 }
-.info__icon {
-}
+/* .info__icon {
+} */
 .info__p {
-  font-size: var(--font-size-p-primary);
+  font-size: 2rem;
   line-height: 1.5;
 }
 .schedule-box {
@@ -1447,20 +1447,20 @@ header .info__p {
 
 @media screen and (max-width: 500px) {
   .btt {
-    bottom: 14rem;
+    bottom: 18rem;
   }
   .testimonials-section {
-    padding-bottom: 34rem;
+    padding-bottom: 37rem;
   }
 }
-@media screen and (max-width: 408px) {
+/* @media screen and (max-width: 408px) {
   .btt {
     bottom: 16rem;
   }
   .testimonials-section {
     padding-bottom: 35rem;
   }
-}
+} */
 
 .inline-btn {
   background-color: var(--btn-pink);
