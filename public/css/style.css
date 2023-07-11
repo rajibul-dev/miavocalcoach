@@ -1431,17 +1431,17 @@ PAYMENT POPUP
 
 /* aligning with warning */
 
-.btt {
+/* .btt {
   bottom: 6rem;
 }
 
 header .info__p {
   max-width: 52ch;
   line-height: 1.7;
-  /* font-weight: 500; */
-}
+  font-weight: 500;
+} */
 
-.testimonials-section {
+/* .testimonials-section {
   padding-bottom: 20rem;
 }
 
@@ -1452,7 +1452,7 @@ header .info__p {
   .testimonials-section {
     padding-bottom: 37rem;
   }
-}
+} */
 /* @media screen and (max-width: 408px) {
   .btt {
     bottom: 16rem;
