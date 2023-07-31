@@ -951,10 +951,6 @@ PATREON SECTION
     grid-template-columns: 1fr;
     row-gap: 4.8rem;
   }
-  .box-pricing:nth-child(3) {
-    padding-top: 7rem;
-    height: auto;
-  }
   .popup-open {
     transform: translate(-50%, -50%);
   }
@@ -968,7 +964,8 @@ PATREON SECTION
     padding-bottom: 4rem !important;
     padding-top: 7rem;
   }
-  .box-pricing:nth-child(3) {
+  .box-pricing:nth-child(4) {
+    height: auto;
     padding-top: 9.3rem;
   }
   .rec-tag {
