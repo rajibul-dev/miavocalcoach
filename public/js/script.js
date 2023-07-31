@@ -141,12 +141,12 @@ const overlay2 = document.querySelector(".overlay2");
 const closeBtn = document.querySelector(".close-btn");
 
 const eur40El = document.querySelector(".eur40");
-const eur65El = document.querySelector(".eur65");
+const eur80El = document.querySelector(".eur80");
 const eur120El = document.querySelector(".eur120");
 const eur240El = document.querySelector(".eur240");
 
 const usd40El = document.querySelector(".usd40");
-const usd65El = document.querySelector(".usd65");
+const usd80El = document.querySelector(".usd80");
 const usd120El = document.querySelector(".usd120");
 const usd240El = document.querySelector(".usd240");
 
@@ -194,13 +194,13 @@ buyBtns.forEach((button) => {
         codeExecuted = true;
       }
 
-      // $65
+      // $80
       else if (
         !codeExecuted &&
-        button.classList.contains("buy-btn-65") &&
+        button.classList.contains("buy-btn-80") &&
         checkoutEl.classList.contains("usd")
       ) {
-        usd65El.classList.add("show-checkout");
+        usd80El.classList.add("show-checkout");
         codeExecuted = true;
       }
 
@@ -230,9 +230,9 @@ buyBtns.forEach((button) => {
         codeExecuted = true;
       }
 
-      // €65
-      else if (!codeExecuted && button.classList.contains("buy-btn-65")) {
-        eur65El.classList.add("show-checkout");
+      // €80
+      else if (!codeExecuted && button.classList.contains("buy-btn-80")) {
+        eur80El.classList.add("show-checkout");
         codeExecuted = true;
       }
 
