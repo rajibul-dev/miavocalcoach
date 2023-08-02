@@ -170,6 +170,13 @@ Making it a grid and removing the hover effect */
     transform: translate(0);
   }
 
+  .twitch .text {
+    display: none;
+  }
+  .twitch:hover .text {
+    display: none;
+  }
+
   /* about box width */
   .about-box {
     width: 100%;
