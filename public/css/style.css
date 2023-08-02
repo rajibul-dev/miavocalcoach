@@ -1482,3 +1482,24 @@ header .info__p {
     transform: scale(1);
   }
 }
+
+/* twitch text odd behaviour fix */
+@keyframes late-text-visibility {
+  0% {
+    opacity: 0;
+  }
+  90% {
+    opacity: 100%;
+  }
+}
+
+.twitch:not(:hover) .text {
+  display: none;
+}
+.twitch .text {
+  display: none;
+}
+.twitch:hover .text {
+  display: initial;
+  animation: late-text-visibility 1.5s;
+}
