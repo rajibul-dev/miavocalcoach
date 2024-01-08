@@ -38,6 +38,7 @@ VARIABLES
   --font-size-tertiary: 2.4rem;
   --font-size-small-p: 1.5rem;
   --font-size-p-primary: 1.8rem;
+  --default-transition: all ease 0.15s;
 }
 
 /* ////////////////////
@@ -507,38 +508,50 @@ html body .socials-section .wrapper .button:nth-child(7) .social-span {
 PATREON SECTION
 //////////////////// */
 
+/* Button */
+.btn {
+  display: inline-block;
+  font-size: var(--font-size-p-primary);
+  font-weight: 600;
+  background-color: #fff;
+  padding: 1.6rem 4rem;
+  border-radius: 12px;
+  transition: var(--default-transition);
+}
+
 .patreon-section {
-  padding-bottom: 9.6rem;
+  margin-bottom: 9.6rem;
+  padding-inline: 5%;
 }
 
 .patreon-container {
-  max-width: 120rem;
-  margin: 0 auto;
-  padding: 0 5%;
-}
+  background-color: #a2b6ff;
+  max-width: 85rem;
+  height: 30rem;
+  margin-inline: auto;
 
-.patreon-wrapper {
-  background-color: #ffd0e5;
-  width: 75rem;
-  padding: 1.8rem 4rem;
-  margin: 0 auto;
-  border-radius: 12px;
-  display: flex;
-  align-items: center;
-  gap: 2rem;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.14);
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+
+  border-radius: 6px;
+  overflow: hidden;
+
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .img-patreon {
-  width: 11rem;
-  border-radius: 50%;
+  width: 28rem;
+  align-self: end;
+}
+
+.patreon-text {
+  align-self: center;
 }
 
 .patreon-heading {
-  font-size: 2.6rem;
-  font-weight: 600;
-  margin-bottom: 1rem;
+  font-size: 3rem;
+  line-height: 1.5;
+  font-weight: 800;
 }
 
 .patreon-p {
@@ -546,17 +559,66 @@ PATREON SECTION
 }
 
 .patreon-button {
-  margin-left: auto;
-  background-color: var(--btn-pink);
-  font-size: var(--font-size-p-primary);
+  margin-top: 4rem;
+  background-color: #b63562;
   color: #fff;
-  padding: 1.5rem 2.6rem;
-  border-radius: 12px;
-  font-weight: 500;
 }
 
 .patreon-button:hover {
-  background-color: #ff77a7;
+  background-color: #df5384;
+}
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 725px) {
+  .patreon-container {
+    grid-template-columns: 1fr;
+    height: auto;
+  }
+  .patreon-text {
+    padding-top: 5rem;
+    padding-inline: 5rem;
+  }
+  .img-patreon {
+    grid-row: 2;
+    justify-self: end;
+    margin-right: 7rem;
+  }
+}
+@media screen and (max-width: 450px) {
+  .patreon-section {
+    background-color: #a2b6ff;
+    margin-inline: 0;
+    margin-bottom: 0;
+    padding-top: 6rem;
+  }
+  .patreon-container {
+    gap: 2rem;
+    box-shadow: none;
+  }
+  .patreon-text {
+    padding-inline: 5%;
+    padding-top: 0;
+  }
+  .img-patreon {
+    margin-right: 5%;
+
+    /* consideration */
+    width: 65vw;
+  }
+  .patreon-button {
+    padding: 1.8rem 5rem;
+  }
+  .patreon-heading {
+    line-height: 1.5;
+  }
+}
+@media screen and (max-width: 379px) {
+  .patreon-heading {
+    font-size: 2.8rem;
+  }
+  .patreon-text {
+    padding-inline: 2%;
+  }
 }
 
 /* ////////////////////

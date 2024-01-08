@@ -349,9 +349,9 @@ CTA SECTION
   .lessons-box:hover {
     box-shadow: 0 3px 9px rgba(0, 0, 0, 0.4);
   }
-  .patreon-box:hover {
+  /* .patreon-box:hover {
     box-shadow: 0 3px 12px rgba(0, 0, 0, 0.2);
-  }
+  } */
 }
 
 @media (max-width: 27.75em) {
@@ -767,7 +767,7 @@ PATREON SECTION
 ///////////////////// */
 
 @media (max-width: 42.5em) {
-  .patreon-heading {
+  /* .patreon-heading {
     font-size: 2.5rem;
     margin-bottom: 1.4rem;
   }
@@ -796,9 +796,9 @@ PATREON SECTION
   }
   .patreon-section {
     padding-bottom: 8;
-  }
+  } */
 }
-@media (max-width: 25em) {
+/* @media (max-width: 25em) {
   .patreon-wrapper {
     width: 97%;
   }
@@ -807,12 +807,12 @@ PATREON SECTION
   .patreon-heading {
     line-height: 1.3;
   }
-}
+} */
 
 /* Increase font size on phone */
 @media (max-width: 30.5em) {
   .about-text,
-  .patreon-p,
+  /* .patreon-p, */
   .message {
     font-size: 1.86rem;
   }
