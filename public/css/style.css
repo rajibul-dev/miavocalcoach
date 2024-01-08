@@ -250,7 +250,7 @@ ABOUT SECTION
 .h1 {
   font-size: 3.2rem;
   font-weight: 500;
-  margin-bottom: 2.4rem;
+  margin-bottom: 2rem !important;
   letter-spacing: normal;
   color: var(--secondary-gray);
 }
@@ -709,11 +709,13 @@ PLANS SECTION
 
 /* Plans */
 .pink-small-heading {
-  text-align: center;
-  color: #c2255c;
-  font-size: 1.9rem;
-  margin-bottom: 1.2rem;
-  font-weight: 600;
+  display: block;
+  font-size: 1.5rem;
+  color: #c4265d;
+  text-transform: uppercase;
+  letter-spacing: 1.2pt;
+  margin-bottom: 1.4rem;
+  font-weight: 700;
 }
 
 .more-margin {
@@ -1443,11 +1445,12 @@ PAYMENT POPUP
 
 /* New stuff */
 .small-pink {
+  display: block;
   font-size: 1.5rem;
   color: #c4265d;
   text-transform: uppercase;
   letter-spacing: 1.2pt;
-  margin-bottom: 1.6rem;
+  margin-bottom: 2.2rem;
   font-weight: 700;
 }
 .heading-atr {
@@ -1455,6 +1458,7 @@ PAYMENT POPUP
   font-size: var(--font-size-secondary-heading);
   line-height: 1.3;
 }
+
 .heading-new {
   margin-bottom: 2.4rem;
 }
@@ -1565,3 +1569,69 @@ header .info__p {
   display: initial;
   animation: late-text-visibility 1.5s;
 }
+
+/*  */
+
+.section-heading {
+  font-weight: 700;
+  font-size: var(--font-size-secondary-heading);
+  line-height: 1.3;
+  margin-bottom: 2.4rem;
+}
+
+.small-pink--center,
+.small-pink--center-pricing {
+  text-align: center;
+}
+
+@media (max-width: 30em) {
+  .small-pink--center {
+    text-align: start;
+    padding-left: 2%;
+  }
+}
+@media (max-width: 26.375em) {
+  .small-pink--center-pricing {
+    text-align: start;
+    padding-left: 2%;
+  }
+}
+
+.heading-atr--contact {
+  display: block;
+  font-weight: 700;
+  font-size: var(--font-size-secondary-heading);
+  line-height: 1.3;
+}
+
+.more-margin--contact {
+  margin-bottom: 6.2rem;
+  text-align: center;
+  font-size: var(--font-size-secondary-heading);
+}
+
+.small-pink--center-contact {
+  display: block;
+  text-align: center;
+}
+
+@media (max-width: 48.375em) {
+  .heading-atr--contact,
+  .small-pink--center-contact {
+    text-align: start;
+    padding-left: 5%;
+  }
+}
+@media (max-width: 502px) {
+  .heading-atr--contact,
+  .small-pink--center-contact {
+    text-align: start;
+    padding-left: 1.5%;
+  }
+}
+
+/* @media (max-width: 400px) {
+  .heading-testi {
+    max-width: 15ch;
+  }
+} */
