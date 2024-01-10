@@ -1011,7 +1011,7 @@ CALENDLY SECTION
 
 .calendly-section {
   background-color: var(--dark-accent-color);
-  padding: 9.6rem 0;
+  padding: 8rem 0;
 }
 
 .calendly-container {
@@ -1105,7 +1105,7 @@ CONTACTS SECTION
 
 .contacts-section {
   background-color: #f3f0ff;
-  padding: 9.6rem 0;
+  padding: 8rem 0;
   letter-spacing: normal;
 }
 
@@ -1605,7 +1605,7 @@ header .info__p {
 }
 
 .more-margin--contact {
-  margin-bottom: 6.2rem;
+  margin-bottom: 5.2rem;
   text-align: center;
   font-size: var(--font-size-secondary-heading);
 }

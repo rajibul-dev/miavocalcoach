@@ -100,17 +100,10 @@ nonFirstallNavLinks.forEach((link) => {
       const offsetPosition =
         elementPosition + window.pageYOffset - headerOffset;
 
-      if (href2 === "#contact") {
-        window.scrollTo({
-          top: offsetPosition + 24,
-          behavior: "smooth",
-        });
-      } else {
-        window.scrollTo({
-          top: offsetPosition,
-          behavior: "smooth",
-        });
-      }
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: "smooth",
+      });
     }
     scrollToTargetAdjusted();
     if (!link.classList.contains("paid-btn")) {
