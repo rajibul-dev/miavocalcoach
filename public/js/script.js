@@ -116,19 +116,13 @@ nonFirstallNavLinks.forEach((link) => {
 });
 
 //////////////////////////////////////
-// Implementing US prices
-// HANDLING PAYMENTS WITH PAYPAL
+// SHOWING THE PAYMENT POPUP
 //////////////////////////////////////
-let euroScript = document.querySelector("#paypal-script");
-let usScript = document.createElement("script");
-usScript.src =
-  "https://www.paypal.com/sdk/js?client-id=AWlVsjH3FBAgYWGVKCzU_voA0e27xMcOTEqoGnU2967MUU_o1aiSpRWzBYIYRmdGW651kNba9Fwwxvq6&components=buttons&currency=USD";
-
 const currency = document.querySelectorAll(".currency");
 const prices = document.querySelectorAll(".dynamic-price");
 const buyBtns = document.querySelectorAll(".buy-btn");
-
 const checkoutEls = document.querySelectorAll(".dynamic-checkout");
+
 const paypalPopup = document.querySelector(".payment-popup");
 const overlay2 = document.querySelector(".overlay2");
 const closeBtn = document.querySelector(".close-btn");
@@ -138,37 +132,12 @@ const eur80El = document.querySelector(".eur80");
 const eur120El = document.querySelector(".eur120");
 const eur240El = document.querySelector(".eur240");
 
-const usd40El = document.querySelector(".usd40");
-const usd80El = document.querySelector(".usd80");
-const usd120El = document.querySelector(".usd120");
-const usd240El = document.querySelector(".usd240");
-
-// For enabling USD for US people:
 // async function fetchLocation() {
 //   let url = "https://ipinfo.io/json?token=3e985ec775d67c";
 //   let response = await fetch(url);
 //   let data = await response.json();
 //   return data.country;
 // }
-
-// async function getCountry() {
-//   const userCountry = await fetchLocation();
-
-//   if (userCountry === "US") {
-//     currency.forEach((cur) => (cur.textContent = "$"));
-//     euroScript.src =
-//       "https://www.paypal.com/sdk/js?client-id=AWlVsjH3FBAgYWGVKCzU_voA0e27xMcOTEqoGnU2967MUU_o1aiSpRWzBYIYRmdGW651kNba9Fwwxvq6&components=buttons&currency=USD";
-
-//     for (let i = 1; i <= 8; i++) {
-//       createPayPalButton(`paypal-button-${i}`);
-//     }
-//     for (let i = 1; i <= 8; i++) {
-//       document.getElementById(`paypal-button-${i}`).firstChild.style.display =
-//         "none";
-//     }
-//   }
-// }
-// getCountry();
 
 buyBtns.forEach((button) => {
   button.addEventListener("click", (e) => {
@@ -177,48 +146,8 @@ buyBtns.forEach((button) => {
     let codeExecuted = false;
 
     checkoutEls.forEach((checkoutEl) => {
-      // $40
-      if (
-        !codeExecuted &&
-        button.classList.contains("buy-btn-40") &&
-        checkoutEl.classList.contains("usd")
-      ) {
-        usd40El.classList.add("show-checkout");
-        codeExecuted = true;
-      }
-
-      // $80
-      else if (
-        !codeExecuted &&
-        button.classList.contains("buy-btn-80") &&
-        checkoutEl.classList.contains("usd")
-      ) {
-        usd80El.classList.add("show-checkout");
-        codeExecuted = true;
-      }
-
-      // $120
-      else if (
-        !codeExecuted &&
-        button.classList.contains("buy-btn-120") &&
-        checkoutEl.classList.contains("usd")
-      ) {
-        usd120El.classList.add("show-checkout");
-        codeExecuted = true;
-      }
-
-      // $240
-      else if (
-        !codeExecuted &&
-        button.classList.contains("buy-btn-240") &&
-        checkoutEl.classList.contains("usd")
-      ) {
-        usd240El.classList.add("show-checkout");
-        codeExecuted = true;
-      }
-
       // €40
-      else if (!codeExecuted && button.classList.contains("buy-btn-40")) {
+      if (!codeExecuted && button.classList.contains("buy-btn-40")) {
         eur40El.classList.add("show-checkout");
         codeExecuted = true;
       }
