@@ -40,7 +40,7 @@ pricingDetails.forEach((pricing, index) => {
       <p class="pop-up-item-name">${heading}</p>
 
       <div id="paypal-button-container">
-        <div id="paypal-button-${instenceNum}" />
+        <div style="margin-bottom: -10px;" id="paypal-button-${instenceNum}" />
       </div>
 
     </div>`;
